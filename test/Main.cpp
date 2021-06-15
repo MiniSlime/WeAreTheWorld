@@ -7,7 +7,7 @@ void Main()
     const Texture earth(Emoji(U"🌏"));
     const Texture texture(Emoji(U"🐈"));
     const Texture muscle(Emoji(U"💪"));
-    const Texture dancer(Emoji(U"💃"));
+    const Texture dancer(Emoji(U"🤔"));
       
     const Vec2 center = Scene::Center();
     constexpr double r = 200.0;
