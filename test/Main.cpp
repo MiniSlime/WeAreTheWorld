@@ -2,6 +2,7 @@
 
 void Main()
 {
+    Window::SetStyle(WindowStyle::Sizable);
     Scene::SetBackground(Palette::White);
 
     const Texture earth(Emoji(U"🌏"));
@@ -18,6 +19,7 @@ void Main()
     double sliderValue = 0.0;
 
     TextEditState text1;
+    text1.text = U"Enter text";
 
     while (System::Update())
     {
