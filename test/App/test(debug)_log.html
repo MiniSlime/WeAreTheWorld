@@ -21,309 +21,1231 @@ div.messages { margin: 0 10% 28px; padding 0 0 28px; border: 1px solid; border-c
 <body>
 <h2>test(debug) Log</h2>
 <div class="messages">
-<div class="trace">911: CSystem::init()</div>
-<div class="info">912: ℹ️ 2021/6/15 15:17:08</div>
-<div class="info">912: ⌛ Preparing for setup...</div>
-<div class="info">913: ℹ️ Siv3D Engine (Debug build) version 0.4.3 (Windows Desktop)</div>
-<div class="trace">913: CCPU::init()</div>
-<div class="info">914: ℹ️ CPU vendor: GenuineIntel</div>
-<div class="info">914: ℹ️ CPU name: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz</div>
-<div class="info">915: ℹ️ Instruction set extensions: SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2, AES-NI, AVX, FMA3, AVX2</div>
-<div class="info">915: ℹ️ CCPU initialized</div>
-<div class="trace">915: CProfiler::init()</div>
-<div class="info">915: ℹ️ CProfiler initialized</div>
-<div class="trace">916: CImageFormat::init()</div>
-<div class="debug">916: Supported image file extensions: bmp, png, jpg, jpeg, gif, ppm, pgm, pbm, pnm, tga, webp</div>
-<div class="info">917: ℹ️ CImageFormat initialized</div>
-<div class="trace">917: CObjectDetection::init()</div>
-<div class="info">925: ℹ️ CObjectDetection initialized</div>
-<div class="trace">925: CWindow::init()</div>
-<div class="trace">926: SetHighDPIAwareness(aware = false)</div>
-<div class="trace">926: DLL::LoadSystemLibrary(library = `user32.dll`)</div>
-<div class="trace">926: DLL::GetFunctionNoThrow::GetFunctionNoThrow(name = `SetThreadDpiAwarenessContext`) p = 0x7fffbef66c50</div>
-<div class="trace">927: CWindow::registerWindowClass()</div>
-<div class="trace">928: CWindow::createWindow()</div>
-<div class="trace">928: CWindow::m_state.frameSize: (8, 8), CWindow::m_state.titleBarHeight: 23</div>
-<div class="trace">936: DLL::LoadSystemLibrary(library = `User32.dll`)</div>
-<div class="trace">936: DLL::GetFunctionNoThrow::GetFunctionNoThrow(name = `SetWindowFeedbackSetting`) p = 0x7fffbef84cd0</div>
-<div class="info">937: ℹ️ CWindow initialized</div>
-<div class="trace">937: CCursor::init()</div>
-<div class="info">937: ℹ️ CCursor initialized</div>
-<div class="trace">937: CKeyboard::init()</div>
-<div class="info">937: ℹ️ CKeyboard initialized</div>
-<div class="trace">938: CMouse::init()</div>
-<div class="info">938: ℹ️ An input digitizer with support for multiple inputs found</div>
-<div class="info">938: ℹ️ CMouse initialized</div>
-<div class="trace">938: CGamepad::init()</div>
-<div class="info">1173: ℹ️ Gamepad initialized</div>
-<div class="trace">1174: CXInput::init()</div>
-<div class="trace">1174: DLL::LoadSystemLibrary(library = `xinput1_4.dll`)</div>
-<div class="trace">1181: DLL::GetFunctionNoThrow::GetFunctionNoThrow(name = `XInputGetState`) p = 0x7fff9fd71750</div>
-<div class="trace">1181: DLL::GetFunctionNoThrow::GetFunctionNoThrow(name = `XInputSetState`) p = 0x7fff9fd719f0</div>
-<div class="info">1181: ℹ️ CXInput initialized</div>
-<div class="trace">1182: CTextInput::init()</div>
-<div class="info">1194: ℹ️ CTextInput initialized</div>
-<div class="trace">1195: CTextToSpeech::init()</div>
-<div class="info">1229: ℹ️ TextToSpeech available</div>
-<div class="info">1230: ℹ️ CTextToSpeech initialized</div>
-<div class="trace">1230: CClipboard::init()</div>
-<div class="info">1231: ℹ️ CClipboard initialized</div>
-<div class="trace">1231: CDragDrop::init()</div>
-<div class="info">1260: ℹ️ CDragDrop initialized</div>
-<div class="trace">1260: CCodec::init()</div>
-<div class="trace">1261: DLL::LoadSystemLibrary(library = `Mfplat.dll`)</div>
-<div class="trace">1273: DLL::LoadSystemLibrary(library = `Mf.dll`)</div>
-<div class="trace">1279: DLL::LoadSystemLibrary(library = `Mfreadwrite.dll`)</div>
-<div class="trace">1286: DLL::GetFunction::GetFunction(name = `MFStartup`) p = 0x7fffb5fc3a50</div>
-<div class="trace">1286: DLL::GetFunction::GetFunction(name = `MFShutdown`) p = 0x7fffb5fc5c20</div>
-<div class="trace">1291: DLL::GetFunction::GetFunction(name = `MFCreateTranscodeTopology`) p = 0x7fff9c7e2060</div>
-<div class="trace">1292: DLL::GetFunction::GetFunction(name = `MFCreateSourceResolver`) p = 0x7fffb5fb16d0</div>
-<div class="trace">1292: DLL::GetFunction::GetFunction(name = `MFCreateAttributes`) p = 0x7fffb5fc37b0</div>
-<div class="trace">1292: DLL::GetFunction::GetFunction(name = `MFCreateMediaType`) p = 0x7fffb5fbb2f0</div>
-<div class="trace">1293: DLL::GetFunction::GetFunction(name = `MFCreateAsyncResult`) p = 0x7fffb5c0bd70</div>
-<div class="trace">1293: DLL::GetFunction::GetFunction(name = `MFInvokeCallback`) p = 0x7fffb5c01f80</div>
-<div class="trace">1293: DLL::GetFunction::GetFunction(name = `MFCreateMemoryBuffer`) p = 0x7fffb5fb2980</div>
-<div class="trace">1294: DLL::GetFunction::GetFunction(name = `MFCreateSample`) p = 0x7fffb5fa84c0</div>
-<div class="trace">1294: DLL::GetFunction::GetFunction(name = `MFFrameRateToAverageTimePerFrame`) p = 0x7fffb6031cf0</div>
-<div class="trace">1308: DLL::GetFunction::GetFunction(name = `MFCreateMediaSession`) p = 0x7fff4079fb90</div>
-<div class="trace">1308: DLL::GetFunction::GetFunction(name = `MFCreateTranscodeProfile`) p = 0x7fff9c7c6d80</div>
-<div class="trace">1309: DLL::GetFunction::GetFunction(name = `MFTranscodeGetAudioOutputAvailableTypes`) p = 0x7fff9c7e2c90</div>
-<div class="trace">1309: DLL::GetFunction::GetFunction(name = `MFGetService`) p = 0x7fff40792a50</div>
-<div class="trace">1309: DLL::GetFunction::GetFunction(name = `MFCreateTopology`) p = 0x7fff40755d70</div>
-<div class="trace">1310: DLL::GetFunction::GetFunction(name = `MFCreateTopologyNode`) p = 0x7fff40766cf0</div>
-<div class="trace">1310: DLL::GetFunction::GetFunction(name = `MFCreateAudioRendererActivate`) p = 0x7fff407bc790</div>
-<div class="trace">1310: DLL::GetFunction::GetFunction(name = `MFCreateVideoRendererActivate`) p = 0x7fff9c8eb6c0</div>
-<div class="trace">1311: DLL::GetFunction::GetFunction(name = `MFCreateSourceReaderFromURL`) p = 0x7fff6c5e3ce0</div>
-<div class="trace">1311: DLL::GetFunction::GetFunction(name = `MFCreateSourceReaderFromByteStream`) p = 0x7fff6c5e3cb0</div>
-<div class="trace">1311: DLL::GetFunction::GetFunction(name = `MFCreateSinkWriterFromURL`) p = 0x7fff6c5e3b10</div>
-<div class="info">1312: ℹ️ Codec_MF initialized</div>
-<div class="trace">1313: CAudioFormat::init()</div>
-<div class="info">1313: ℹ️ CAudioFormat initialized</div>
-<div class="trace">1313: CAudio_X28::init()</div>
-<div class="debug">1324: 💠 Created Audio[0(null)]</div>
-<div class="info">1325: ℹ️ CAudio_X28 initialized</div>
-<div class="trace">1326: CFFT::init()</div>
-<div class="info">1328: ℹ️ CFFT initialized</div>
-<div class="trace">1329: CNetwork::init()</div>
-<div class="info">1331: ℹ️ CNetwork initialized</div>
-<div class="trace">1331: CToastNotification::init()</div>
-<div class="info">1331: ℹ️ ToastNotification is available</div>
-<div class="info">1334: ℹ️ CToastNotification initialized</div>
-<div class="trace">1334: CGraphics_D3D11::init()</div>
-<div class="trace">1334: D3D11Device::D3D11Device()</div>
-<div class="trace">1335: DLL::LoadSystemLibrary(library = `d3d11.dll`)</div>
-<div class="trace">1335: DLL::GetFunction::GetFunction(name = `D3D11CreateDevice`) p = 0x7fffb7d2fcb0</div>
-<div class="trace">1335: DLL::LoadSystemLibrary(library = `dxgi.dll`)</div>
-<div class="trace">1336: DLL::GetFunction::GetFunction(name = `CreateDXGIFactory1`) p = 0x7fffbc419f50</div>
-<div class="trace">1336: DLL::LoadSystemLibrary(library = `D3D11_1SDKLayers.dll`)</div>
-<div class="info">1349: ℹ️ DXGIFactory5 is available</div>
-<div class="trace">1350: GetAdapters()</div>
-<div class="info">1351: ℹ️ IDXGIAdapter [0]: Intel(R) UHD Graphics 620 (Dedicated GPU memory: 128MiB, System: 0B, Shared: 3.93GiB) (supports Direct3D 11.1 runtime)</div>
-<div class="trace">1351: CheckHardwareDevice()</div>
-<div class="info">1408: ℹ️ - [D3D_DRIVER_TYPE_HARDWARE] selected: D3D_FEATURE_LEVEL_12_1 (max: D3D_FEATURE_LEVEL_12_1)</div>
-<div class="debug">1420: ℹ️ IDXGIAdapter [1] is Microsoft Basics Display Driver (skipped)</div>
-<div class="info">1421: ℹ️ 1 adapters available</div>
-<div class="trace">1421: GetWARPFeatureLevel()</div>
-<div class="info">1431: ℹ️ [D3D_DRIVER_TYPE_WARP] supports D3D_FEATURE_LEVEL_11_1</div>
-<div class="trace">1431: GetREFFeatureLevel()</div>
-<div class="info">1444: ℹ️ [D3D_DRIVER_TYPE_REFERENCE] supports D3D_FEATURE_LEVEL_11_1</div>
-<div class="trace">1444: D3D11Device::createDevice(targetDevice = 0, targetAdapterIndex = none, deviceFlags = 2)</div>
-<div class="info">1445: ℹ️ selectedAdapterIndex: 0 (Intel(R) UHD Graphics 620)</div>
-<div class="info">1492: ✅ D3D11 device created. Driver type: Hardware (D3D_FEATURE_LEVEL_12_1)</div>
-<div class="trace">1493: D3D11SwapChain::D3D11SwapChain()</div>
-<div class="trace">1493: Use flip model = true</div>
-<div class="trace">1493: DLL::LoadSystemLibrary(library = `User32.dll`)</div>
-<div class="trace">1493: DLL::GetFunctionNoThrow::GetFunctionNoThrow(name = `GetDpiForWindow`) p = 0x7fffbef63f40</div>
-<div class="trace">1494: IDXGIFactory2::CreateSwapChainForHwnd()</div>
-<div class="trace">1495: IDXGIFactory1::MakeWindowAssociation()</div>
-<div class="trace">1496: D3D11RenderTarget::D3D11RenderTarget()</div>
-<div class="trace">1496: D3D11RenderTarget::m_backBuffer.size = (800, 600)</div>
-<div class="trace">1496: CreateRTVFromBackBuffer()</div>
-<div class="trace">1497: CreateRenderTarget2D(size = (800, 600), sampleCount = 4)</div>
-<div class="trace">1499: CShader_D3D11::init()</div>
-<div class="trace">1499: DLL::LoadSystemLibrary(library = `d3dcompiler_47.dll`)</div>
-<div class="info">1508: `d3dcompiler_47.dll` found</div>
-<div class="trace">1508: DLL::GetFunctionNoThrow::GetFunctionNoThrow(name = `D3DCompile2`) p = 0x7fffb8602470</div>
-<div class="info">1509: HLSL compiler is available</div>
-<div class="debug">1509: 💠 Created VertexShader[0(null)]</div>
-<div class="debug">1509: 💠 Created PixelShader[0(null)]</div>
-<div class="debug">1510: 📤 BinaryReader: Opened resource &quot;/engine/shader/copy.ps&quot; size: 616B</div>
-<div class="debug">1510: CShader_D3D11::createVSFromFile(): `/engine/shader/copy.ps` is a precompiled shader file</div>
-<div class="debug">1511: 💠 Created PixelShader[1] </div>
-<div class="debug">1511: 📥 BinaryReader: Closed resource &quot;/engine/shader/copy.ps&quot;</div>
-<div class="debug">1511: 📤 BinaryReader: Opened resource &quot;/engine/shader/gaussian_blur_9.ps&quot; size: 1.36KiB</div>
-<div class="debug">1512: CShader_D3D11::createVSFromFile(): `/engine/shader/gaussian_blur_9.ps` is a precompiled shader file</div>
-<div class="debug">1512: 💠 Created PixelShader[2] </div>
-<div class="debug">1512: 📥 BinaryReader: Closed resource &quot;/engine/shader/gaussian_blur_9.ps&quot;</div>
-<div class="info">1513: ℹ️ CShader_D3D11 initialized</div>
-<div class="trace">1513: CTexture_D3D11::init()</div>
-<div class="info">1513: 4x MSAA support:</div>
-<div class="debug">1513: R8G8B8A8_Unorm ✔</div>
-<div class="debug">1513: R8G8B8A8_Unorm_SRGB ✔</div>
-<div class="debug">1513: R16G16_Float ✔</div>
-<div class="debug">1514: R32_Float ✔</div>
-<div class="debug">1514: R10G10B10A2_Unorm ✔</div>
-<div class="debug">1514: R11G11B10_UFloat ✔</div>
-<div class="debug">1514: R16G16B16A16_Float ✔</div>
-<div class="debug">1514: R32G32_Float ✔</div>
-<div class="debug">1515: R32G32B32A32_Float ✔</div>
-<div class="debug">1515: 💠 Created Texture[0(null)]</div>
-<div class="info">1516: ℹ️ CTexture_D3D11 initialized</div>
-<div class="trace">1516: CRenderer2D_D3D11::init()</div>
-<div class="debug">1516: 📤 BinaryReader: Opened resource &quot;/engine/shader/sprite.vs&quot; size: 936B</div>
-<div class="debug">1516: CShader_D3D11::createVSFromFile(): `/engine/shader/sprite.vs` is a precompiled shader file</div>
-<div class="debug">1517: 💠 Created VertexShader[1] </div>
-<div class="debug">1517: 📥 BinaryReader: Closed resource &quot;/engine/shader/sprite.vs&quot;</div>
-<div class="debug">1518: 📤 BinaryReader: Opened resource &quot;/engine/shader/fullscreen_triangle_resolve.vs&quot; size: 1KiB</div>
-<div class="debug">1518: CShader_D3D11::createVSFromFile(): `/engine/shader/fullscreen_triangle_resolve.vs` is a precompiled shader file</div>
-<div class="debug">1519: 💠 Created VertexShader[2] </div>
-<div class="debug">1519: 📥 BinaryReader: Closed resource &quot;/engine/shader/fullscreen_triangle_resolve.vs&quot;</div>
-<div class="debug">1519: 📤 BinaryReader: Opened resource &quot;/engine/shader/fullscreen_triangle_draw.vs&quot; size: 804B</div>
-<div class="debug">1519: CShader_D3D11::createVSFromFile(): `/engine/shader/fullscreen_triangle_draw.vs` is a precompiled shader file</div>
-<div class="debug">1520: 💠 Created VertexShader[3] </div>
-<div class="debug">1520: 📥 BinaryReader: Closed resource &quot;/engine/shader/fullscreen_triangle_draw.vs&quot;</div>
-<div class="debug">1521: 📤 BinaryReader: Opened resource &quot;/engine/shader/shape.ps&quot; size: 708B</div>
-<div class="debug">1521: CShader_D3D11::createVSFromFile(): `/engine/shader/shape.ps` is a precompiled shader file</div>
-<div class="debug">1522: 💠 Created PixelShader[3] </div>
-<div class="debug">1522: 📥 BinaryReader: Closed resource &quot;/engine/shader/shape.ps&quot;</div>
-<div class="debug">1522: 📤 BinaryReader: Opened resource &quot;/engine/shader/texture.ps&quot; size: 884B</div>
-<div class="debug">1522: CShader_D3D11::createVSFromFile(): `/engine/shader/texture.ps` is a precompiled shader file</div>
-<div class="debug">1523: 💠 Created PixelShader[4] </div>
-<div class="debug">1523: 📥 BinaryReader: Closed resource &quot;/engine/shader/texture.ps&quot;</div>
-<div class="debug">1524: 📤 BinaryReader: Opened resource &quot;/engine/shader/square_dot.ps&quot; size: 1.13KiB</div>
-<div class="debug">1524: CShader_D3D11::createVSFromFile(): `/engine/shader/square_dot.ps` is a precompiled shader file</div>
-<div class="debug">1525: 💠 Created PixelShader[5] </div>
-<div class="debug">1525: 📥 BinaryReader: Closed resource &quot;/engine/shader/square_dot.ps&quot;</div>
-<div class="debug">1525: 📤 BinaryReader: Opened resource &quot;/engine/shader/round_dot.ps&quot; size: 1.14KiB</div>
-<div class="debug">1525: CShader_D3D11::createVSFromFile(): `/engine/shader/round_dot.ps` is a precompiled shader file</div>
-<div class="debug">1526: 💠 Created PixelShader[6] </div>
-<div class="debug">1526: 📥 BinaryReader: Closed resource &quot;/engine/shader/round_dot.ps&quot;</div>
-<div class="debug">1527: 📤 BinaryReader: Opened resource &quot;/engine/shader/sdf.ps&quot; size: 1.28KiB</div>
-<div class="debug">1527: CShader_D3D11::createVSFromFile(): `/engine/shader/sdf.ps` is a precompiled shader file</div>
-<div class="debug">1528: 💠 Created PixelShader[7] </div>
-<div class="debug">1528: 📥 BinaryReader: Closed resource &quot;/engine/shader/sdf.ps&quot;</div>
-<div class="debug">1528: 📤 BinaryReader: Opened resource &quot;/engine/shader/fullscreen_triangle_resolve.ps&quot; size: 872B</div>
-<div class="debug">1528: CShader_D3D11::createVSFromFile(): `/engine/shader/fullscreen_triangle_resolve.ps` is a precompiled shader file</div>
-<div class="debug">1529: 💠 Created PixelShader[8] </div>
-<div class="debug">1529: 📥 BinaryReader: Closed resource &quot;/engine/shader/fullscreen_triangle_resolve.ps&quot;</div>
-<div class="debug">1530: 📤 BinaryReader: Opened resource &quot;/engine/shader/fullscreen_triangle_draw.ps&quot; size: 664B</div>
-<div class="debug">1530: CShader_D3D11::createVSFromFile(): `/engine/shader/fullscreen_triangle_draw.ps` is a precompiled shader file</div>
-<div class="debug">1530: 💠 Created PixelShader[9] </div>
-<div class="debug">1531: 📥 BinaryReader: Closed resource &quot;/engine/shader/fullscreen_triangle_draw.ps&quot;</div>
-<div class="debug">1532: 📤 BinaryReader: Opened resource &quot;/engine/texture/box-shadow/256.png&quot; size: 5.51KiB</div>
-<div class="debug">1539: 📥 BinaryReader: Closed resource &quot;/engine/texture/box-shadow/256.png&quot;</div>
-<div class="debug">1540: 📤 BinaryReader: Opened resource &quot;/engine/texture/box-shadow/128.png&quot; size: 2.5KiB</div>
-<div class="debug">1543: 📥 BinaryReader: Closed resource &quot;/engine/texture/box-shadow/128.png&quot;</div>
-<div class="debug">1543: 📤 BinaryReader: Opened resource &quot;/engine/texture/box-shadow/64.png&quot; size: 1.34KiB</div>
-<div class="debug">1544: 📥 BinaryReader: Closed resource &quot;/engine/texture/box-shadow/64.png&quot;</div>
-<div class="debug">1544: 📤 BinaryReader: Opened resource &quot;/engine/texture/box-shadow/32.png&quot; size: 617B</div>
-<div class="debug">1545: 📥 BinaryReader: Closed resource &quot;/engine/texture/box-shadow/32.png&quot;</div>
-<div class="debug">1545: 📤 BinaryReader: Opened resource &quot;/engine/texture/box-shadow/16.png&quot; size: 263B</div>
-<div class="debug">1545: 📥 BinaryReader: Closed resource &quot;/engine/texture/box-shadow/16.png&quot;</div>
-<div class="debug">1545: 📤 BinaryReader: Opened resource &quot;/engine/texture/box-shadow/8.png&quot; size: 140B</div>
-<div class="debug">1546: 📥 BinaryReader: Closed resource &quot;/engine/texture/box-shadow/8.png&quot;</div>
-<div class="debug">1547: 💠 Created Texture[1] (type: Normal, size: 256x256, format: R8G8B8A8_Unorm)</div>
-<div class="info">1547: ℹ️ CRenderer2D_D3D11 initialized</div>
-<div class="info">1548: ℹ️ CGraphics_D3D11 initialized</div>
-<div class="trace">1548: CScreenCapture::init()</div>
-<div class="debug">1548: Default Screenshot directory: &quot;C:/Users/takum/source/repos/test/test/App/Screenshot/&quot;</div>
-<div class="info">1548: ℹ️ CScreenCapture initialized</div>
-<div class="trace">1548: CFont::init()</div>
-<div class="debug">1554: 💠 Created Font[0(null)]</div>
-<div class="info">1554: ℹ️ CFont initialized</div>
-<div class="trace">1554: CSDFFont::init()</div>
-<div class="debug">1554: 💠 Created SDFFont[0(null)]</div>
-<div class="info">1555: ℹ️ CSDFFont initialized</div>
-<div class="trace">1555: CGUI::init()</div>
-<div class="debug">1557: 💠 Created Font[1] (`M+ 1p medium` size: 20)</div>
-<div class="info">1558: ℹ️ CGUI initialized</div>
-<div class="trace">1558: CEffect::init()</div>
-<div class="debug">1558: 💠 Created Effect[0(null)]</div>
-<div class="info">1558: ℹ️ CEffect initialized</div>
-<div class="trace">1559: CPrint::init()</div>
-<div class="debug">1561: 💠 Created Font[2] (`M+ 1p medium` size: 16)</div>
-<div class="info">1561: ℹ️ CPrint initialized</div>
-<div class="trace">1561: CAsset::init()</div>
-<div class="info">1561: ℹ️ Asset initialized</div>
-<div class="info">1562: ✅ Siv3D engine setup completed</div>
-<div class="trace">1562: MainThread</div>
-<hr width="99%"><div class="trace">1563: CScript::init()</div>
-<div class="debug">1672: 💠 Created Script[0(null)]</div>
-<div class="info">1673: ℹ️ CScript initialized</div>
-<div class="debug">1677: 💠 Created Texture[2] (type: Normal, size: 136x128, format: R8G8B8A8_Unorm)</div>
-<div class="debug">1680: 💠 Created Texture[3] (type: Normal, size: 136x128, format: R8G8B8A8_Unorm)</div>
-<div class="debug">1683: 💠 Created Texture[4] (type: Normal, size: 136x128, format: R8G8B8A8_Unorm)</div>
-<div class="debug">1687: 💠 Created Texture[5] (type: Normal, size: 136x128, format: R8G8B8A8_Unorm)</div>
-<div class="trace">1695: WM_PAINT</div>
-<div class="trace">1697: WM_SIZE</div>
-<div class="trace">1697: CWindow::updateWindowBounds(rect = (360, 92, 816, 639))</div>
-<div class="trace">1697: CWindow::requestBackBufferResizing()</div>
-<div class="trace">1700: CWindow::updateWindowBounds(rect = (360, 92, 816, 639))</div>
-<div class="trace">44346: WM_CLOSE</div>
-<div class="info">44349: 🚪 System::Update(): `UserAction::CloseButtonClicked` has occurred</div>
-<div class="debug">44349: ♻️ Released Texture[5]</div>
-<div class="debug">44350: ♻️ Released Texture[4]</div>
-<div class="debug">44350: ♻️ Released Texture[3]</div>
-<div class="debug">44350: ♻️ Released Texture[2]</div>
-<div class="debug">44351: ♻️ Released Script[0(null)]</div>
-<hr width="99%"><div class="trace">44367: CAsset::~CAsset()</div>
-<div class="trace">44368: CScript::~CScript()</div>
-<div class="trace">44369: CPrint::~CPrint()</div>
-<div class="debug">44369: ♻️ Released Font[2]</div>
-<div class="trace">44369: CEffect::~CEffect()</div>
-<div class="debug">44370: ♻️ Released Effect[0(null)]</div>
-<div class="trace">44370: CGUI::~CGUI()</div>
-<div class="debug">44370: ♻️ Released Font[1]</div>
-<div class="trace">44371: CSDFFont::~CSDFFont()</div>
-<div class="debug">44371: ♻️ Released SDFFont[0(null)]</div>
-<div class="trace">44372: CFont::~CFont()</div>
-<div class="debug">44372: ♻️ Released Font[0(null)]</div>
-<div class="trace">44373: CScreenCapture::~CScreenCapture()</div>
-<div class="trace">44373: CRenderer2D_D3D11::~CRenderer2D_D3D11()</div>
-<div class="debug">44373: ♻️ Released Texture[1]</div>
-<div class="debug">44374: ♻️ Released PixelShader[9]</div>
-<div class="debug">44375: ♻️ Released PixelShader[8]</div>
-<div class="debug">44375: ♻️ Released PixelShader[7]</div>
-<div class="debug">44375: ♻️ Released PixelShader[6]</div>
-<div class="debug">44376: ♻️ Released PixelShader[5]</div>
-<div class="debug">44376: ♻️ Released PixelShader[4]</div>
-<div class="debug">44377: ♻️ Released PixelShader[3]</div>
-<div class="debug">44377: ♻️ Released VertexShader[3]</div>
-<div class="debug">44377: ♻️ Released VertexShader[2]</div>
-<div class="debug">44378: ♻️ Released VertexShader[1]</div>
-<div class="trace">44378: CTexture_D3D11::~CTexture_D3D11()</div>
-<div class="debug">44378: ♻️ Released Texture[0(null)]</div>
-<div class="trace">44379: CShader_D3D11::~CShader_D3D11()</div>
-<div class="debug">44379: ♻️ Released PixelShader[1]</div>
-<div class="debug">44379: ♻️ Released PixelShader[2]</div>
-<div class="debug">44380: ♻️ Released PixelShader[0(null)]</div>
-<div class="debug">44380: ♻️ Released VertexShader[0(null)]</div>
-<div class="trace">44381: CGraphics_D3D11::~CGraphics_D3D11()</div>
-<div class="trace">44416: CToastNotification::~CToastNotification()</div>
-<div class="trace">44417: CNetwork::~CNetwork()</div>
-<div class="trace">44417: CFFT::~CFFT()</div>
-<div class="debug">44440: ♻️ Released Audio[0(null)]</div>
-<div class="trace">44471: CSoundFont::~CSoundFont()</div>
-<div class="trace">44471: CAudioFormat::~CAudioFormat()</div>
-<div class="trace">44472: CCodec::~CCodec()</div>
-<div class="trace">44484: CDragDrop::~CDragDrop()</div>
-<div class="trace">44485: CClipboard::~CClipboard()</div>
-<div class="trace">44485: CTextToSpeech::~CTextToSpeech()</div>
-<div class="trace">44486: CTextInput::~CTextInput()</div>
-<div class="trace">44486: CXInput::~CXInput()</div>
-<div class="trace">44486: CGamepad::~CGamepad()</div>
-<div class="trace">44487: CMouse::~CMouse()</div>
-<div class="trace">44487: CKeyboard::CKeyboard()</div>
-<div class="trace">44487: CCursor::~CCursor()</div>
-<div class="trace">44488: CWindow::~CWindow()</div>
-<div class="trace">44503: WM_DESTROY</div>
-<div class="trace">44527: message.message == WM_QUIT</div>
-<div class="trace">44527: CObjectDetection::~CObjectDetection()</div>
-<div class="trace">44528: CImageFormat::~CImageFormat()</div>
-<div class="trace">44528: CProfiler::~CProfiler()</div>
-<div class="trace">44528: CCPU::~CCPU()</div>
-<div class="info">44541: ✅ Siv3D engine has terminated</div>
-<div class="info">44541: ℹ️ 2021/6/15 15:17:52</div>
+<div class="trace">874: CSystem::init()</div>
+<div class="info">874: ℹ️ 2021/6/22 13:25:55</div>
+<div class="info">874: ⌛ Preparing for setup...</div>
+<div class="info">874: ℹ️ Siv3D Engine (Debug build) version 0.4.3 (Windows Desktop)</div>
+<div class="trace">875: CCPU::init()</div>
+<div class="info">875: ℹ️ CPU vendor: GenuineIntel</div>
+<div class="info">876: ℹ️ CPU name: Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz</div>
+<div class="info">876: ℹ️ Instruction set extensions: SSE, SSE2, SSE3, SSSE3, SSE4.1, SSE4.2, AES-NI, AVX, FMA3, AVX2</div>
+<div class="info">876: ℹ️ CCPU initialized</div>
+<div class="trace">877: CProfiler::init()</div>
+<div class="info">877: ℹ️ CProfiler initialized</div>
+<div class="trace">877: CImageFormat::init()</div>
+<div class="debug">878: Supported image file extensions: bmp, png, jpg, jpeg, gif, ppm, pgm, pbm, pnm, tga, webp</div>
+<div class="info">878: ℹ️ CImageFormat initialized</div>
+<div class="trace">878: CObjectDetection::init()</div>
+<div class="info">886: ℹ️ CObjectDetection initialized</div>
+<div class="trace">887: CWindow::init()</div>
+<div class="trace">887: SetHighDPIAwareness(aware = false)</div>
+<div class="trace">887: DLL::LoadSystemLibrary(library = `user32.dll`)</div>
+<div class="trace">888: DLL::GetFunctionNoThrow::GetFunctionNoThrow(name = `SetThreadDpiAwarenessContext`) p = 0x7fffbef66c50</div>
+<div class="trace">888: CWindow::registerWindowClass()</div>
+<div class="trace">890: CWindow::createWindow()</div>
+<div class="trace">891: CWindow::m_state.frameSize: (8, 8), CWindow::m_state.titleBarHeight: 23</div>
+<div class="trace">902: DLL::LoadSystemLibrary(library = `User32.dll`)</div>
+<div class="trace">902: DLL::GetFunctionNoThrow::GetFunctionNoThrow(name = `SetWindowFeedbackSetting`) p = 0x7fffbef84cd0</div>
+<div class="info">903: ℹ️ CWindow initialized</div>
+<div class="trace">903: CCursor::init()</div>
+<div class="info">903: ℹ️ CCursor initialized</div>
+<div class="trace">904: CKeyboard::init()</div>
+<div class="info">904: ℹ️ CKeyboard initialized</div>
+<div class="trace">904: CMouse::init()</div>
+<div class="info">904: ℹ️ An input digitizer with support for multiple inputs found</div>
+<div class="info">905: ℹ️ CMouse initialized</div>
+<div class="trace">905: CGamepad::init()</div>
+<div class="info">1056: ℹ️ Gamepad initialized</div>
+<div class="trace">1057: CXInput::init()</div>
+<div class="trace">1057: DLL::LoadSystemLibrary(library = `xinput1_4.dll`)</div>
+<div class="trace">1061: DLL::GetFunctionNoThrow::GetFunctionNoThrow(name = `XInputGetState`) p = 0x7fff9cbe1750</div>
+<div class="trace">1061: DLL::GetFunctionNoThrow::GetFunctionNoThrow(name = `XInputSetState`) p = 0x7fff9cbe19f0</div>
+<div class="info">1061: ℹ️ CXInput initialized</div>
+<div class="trace">1062: CTextInput::init()</div>
+<div class="info">1074: ℹ️ CTextInput initialized</div>
+<div class="trace">1074: CTextToSpeech::init()</div>
+<div class="info">1096: ℹ️ TextToSpeech available</div>
+<div class="info">1097: ℹ️ CTextToSpeech initialized</div>
+<div class="trace">1097: CClipboard::init()</div>
+<div class="info">1097: ℹ️ CClipboard initialized</div>
+<div class="trace">1097: CDragDrop::init()</div>
+<div class="info">1116: ℹ️ CDragDrop initialized</div>
+<div class="trace">1117: CCodec::init()</div>
+<div class="trace">1117: DLL::LoadSystemLibrary(library = `Mfplat.dll`)</div>
+<div class="trace">1124: DLL::LoadSystemLibrary(library = `Mf.dll`)</div>
+<div class="trace">1128: DLL::LoadSystemLibrary(library = `Mfreadwrite.dll`)</div>
+<div class="trace">1133: DLL::GetFunction::GetFunction(name = `MFStartup`) p = 0x7fffb5fc3a50</div>
+<div class="trace">1133: DLL::GetFunction::GetFunction(name = `MFShutdown`) p = 0x7fffb5fc5c20</div>
+<div class="trace">1136: DLL::GetFunction::GetFunction(name = `MFCreateTranscodeTopology`) p = 0x7fff84902060</div>
+<div class="trace">1137: DLL::GetFunction::GetFunction(name = `MFCreateSourceResolver`) p = 0x7fffb5fb16d0</div>
+<div class="trace">1137: DLL::GetFunction::GetFunction(name = `MFCreateAttributes`) p = 0x7fffb5fc37b0</div>
+<div class="trace">1137: DLL::GetFunction::GetFunction(name = `MFCreateMediaType`) p = 0x7fffb5fbb2f0</div>
+<div class="trace">1138: DLL::GetFunction::GetFunction(name = `MFCreateAsyncResult`) p = 0x7fffb5c0bd70</div>
+<div class="trace">1138: DLL::GetFunction::GetFunction(name = `MFInvokeCallback`) p = 0x7fffb5c01f80</div>
+<div class="trace">1138: DLL::GetFunction::GetFunction(name = `MFCreateMemoryBuffer`) p = 0x7fffb5fb2980</div>
+<div class="trace">1139: DLL::GetFunction::GetFunction(name = `MFCreateSample`) p = 0x7fffb5fa84c0</div>
+<div class="trace">1139: DLL::GetFunction::GetFunction(name = `MFFrameRateToAverageTimePerFrame`) p = 0x7fffb6031cf0</div>
+<div class="trace">1149: DLL::GetFunction::GetFunction(name = `MFCreateMediaSession`) p = 0x7fffaf75fb90</div>
+<div class="trace">1149: DLL::GetFunction::GetFunction(name = `MFCreateTranscodeProfile`) p = 0x7fff848e6d80</div>
+<div class="trace">1149: DLL::GetFunction::GetFunction(name = `MFTranscodeGetAudioOutputAvailableTypes`) p = 0x7fff84902c90</div>
+<div class="trace">1149: DLL::GetFunction::GetFunction(name = `MFGetService`) p = 0x7fffaf752a50</div>
+<div class="trace">1150: DLL::GetFunction::GetFunction(name = `MFCreateTopology`) p = 0x7fffaf715d70</div>
+<div class="trace">1150: DLL::GetFunction::GetFunction(name = `MFCreateTopologyNode`) p = 0x7fffaf726cf0</div>
+<div class="trace">1150: DLL::GetFunction::GetFunction(name = `MFCreateAudioRendererActivate`) p = 0x7fffaf77c790</div>
+<div class="trace">1150: DLL::GetFunction::GetFunction(name = `MFCreateVideoRendererActivate`) p = 0x7fffb156b6c0</div>
+<div class="trace">1151: DLL::GetFunction::GetFunction(name = `MFCreateSourceReaderFromURL`) p = 0x7fff60f93ce0</div>
+<div class="trace">1151: DLL::GetFunction::GetFunction(name = `MFCreateSourceReaderFromByteStream`) p = 0x7fff60f93cb0</div>
+<div class="trace">1151: DLL::GetFunction::GetFunction(name = `MFCreateSinkWriterFromURL`) p = 0x7fff60f93b10</div>
+<div class="info">1152: ℹ️ Codec_MF initialized</div>
+<div class="trace">1152: CAudioFormat::init()</div>
+<div class="info">1152: ℹ️ CAudioFormat initialized</div>
+<div class="trace">1152: CAudio_X28::init()</div>
+<div class="debug">1161: 💠 Created Audio[0(null)]</div>
+<div class="info">1161: ℹ️ CAudio_X28 initialized</div>
+<div class="trace">1163: CFFT::init()</div>
+<div class="info">1164: ℹ️ CFFT initialized</div>
+<div class="trace">1165: CNetwork::init()</div>
+<div class="info">1166: ℹ️ CNetwork initialized</div>
+<div class="trace">1166: CToastNotification::init()</div>
+<div class="info">1167: ℹ️ ToastNotification is available</div>
+<div class="info">1167: ℹ️ CToastNotification initialized</div>
+<div class="trace">1167: CGraphics_D3D11::init()</div>
+<div class="trace">1168: D3D11Device::D3D11Device()</div>
+<div class="trace">1168: DLL::LoadSystemLibrary(library = `d3d11.dll`)</div>
+<div class="trace">1168: DLL::GetFunction::GetFunction(name = `D3D11CreateDevice`) p = 0x7fffb7d2fcb0</div>
+<div class="trace">1169: DLL::LoadSystemLibrary(library = `dxgi.dll`)</div>
+<div class="trace">1169: DLL::GetFunction::GetFunction(name = `CreateDXGIFactory1`) p = 0x7fffbc419f50</div>
+<div class="trace">1169: DLL::LoadSystemLibrary(library = `D3D11_1SDKLayers.dll`)</div>
+<div class="info">1178: ℹ️ DXGIFactory5 is available</div>
+<div class="trace">1178: GetAdapters()</div>
+<div class="info">1179: ℹ️ IDXGIAdapter [0]: Intel(R) UHD Graphics 620 (Dedicated GPU memory: 128MiB, System: 0B, Shared: 3.93GiB) (supports Direct3D 11.1 runtime)</div>
+<div class="trace">1179: CheckHardwareDevice()</div>
+<div class="info">1232: ℹ️ - [D3D_DRIVER_TYPE_HARDWARE] selected: D3D_FEATURE_LEVEL_12_1 (max: D3D_FEATURE_LEVEL_12_1)</div>
+<div class="debug">1246: ℹ️ IDXGIAdapter [1] is Microsoft Basics Display Driver (skipped)</div>
+<div class="info">1246: ℹ️ 1 adapters available</div>
+<div class="trace">1246: GetWARPFeatureLevel()</div>
+<div class="info">1257: ℹ️ [D3D_DRIVER_TYPE_WARP] supports D3D_FEATURE_LEVEL_11_1</div>
+<div class="trace">1258: GetREFFeatureLevel()</div>
+<div class="info">1270: ℹ️ [D3D_DRIVER_TYPE_REFERENCE] supports D3D_FEATURE_LEVEL_11_1</div>
+<div class="trace">1271: D3D11Device::createDevice(targetDevice = 0, targetAdapterIndex = none, deviceFlags = 2)</div>
+<div class="info">1271: ℹ️ selectedAdapterIndex: 0 (Intel(R) UHD Graphics 620)</div>
+<div class="info">1326: ✅ D3D11 device created. Driver type: Hardware (D3D_FEATURE_LEVEL_12_1)</div>
+<div class="trace">1326: D3D11SwapChain::D3D11SwapChain()</div>
+<div class="trace">1326: Use flip model = true</div>
+<div class="trace">1327: DLL::LoadSystemLibrary(library = `User32.dll`)</div>
+<div class="trace">1327: DLL::GetFunctionNoThrow::GetFunctionNoThrow(name = `GetDpiForWindow`) p = 0x7fffbef63f40</div>
+<div class="trace">1327: IDXGIFactory2::CreateSwapChainForHwnd()</div>
+<div class="trace">1329: IDXGIFactory1::MakeWindowAssociation()</div>
+<div class="trace">1329: D3D11RenderTarget::D3D11RenderTarget()</div>
+<div class="trace">1329: D3D11RenderTarget::m_backBuffer.size = (800, 600)</div>
+<div class="trace">1330: CreateRTVFromBackBuffer()</div>
+<div class="trace">1330: CreateRenderTarget2D(size = (800, 600), sampleCount = 4)</div>
+<div class="trace">1332: CShader_D3D11::init()</div>
+<div class="trace">1333: DLL::LoadSystemLibrary(library = `d3dcompiler_47.dll`)</div>
+<div class="info">1344: `d3dcompiler_47.dll` found</div>
+<div class="trace">1344: DLL::GetFunctionNoThrow::GetFunctionNoThrow(name = `D3DCompile2`) p = 0x7fffb8602470</div>
+<div class="info">1344: HLSL compiler is available</div>
+<div class="debug">1345: 💠 Created VertexShader[0(null)]</div>
+<div class="debug">1345: 💠 Created PixelShader[0(null)]</div>
+<div class="debug">1346: 📤 BinaryReader: Opened resource &quot;/engine/shader/copy.ps&quot; size: 616B</div>
+<div class="debug">1346: CShader_D3D11::createVSFromFile(): `/engine/shader/copy.ps` is a precompiled shader file</div>
+<div class="debug">1347: 💠 Created PixelShader[1] </div>
+<div class="debug">1347: 📥 BinaryReader: Closed resource &quot;/engine/shader/copy.ps&quot;</div>
+<div class="debug">1348: 📤 BinaryReader: Opened resource &quot;/engine/shader/gaussian_blur_9.ps&quot; size: 1.36KiB</div>
+<div class="debug">1348: CShader_D3D11::createVSFromFile(): `/engine/shader/gaussian_blur_9.ps` is a precompiled shader file</div>
+<div class="debug">1349: 💠 Created PixelShader[2] </div>
+<div class="debug">1349: 📥 BinaryReader: Closed resource &quot;/engine/shader/gaussian_blur_9.ps&quot;</div>
+<div class="info">1349: ℹ️ CShader_D3D11 initialized</div>
+<div class="trace">1349: CTexture_D3D11::init()</div>
+<div class="info">1350: 4x MSAA support:</div>
+<div class="debug">1350: R8G8B8A8_Unorm ✔</div>
+<div class="debug">1350: R8G8B8A8_Unorm_SRGB ✔</div>
+<div class="debug">1350: R16G16_Float ✔</div>
+<div class="debug">1350: R32_Float ✔</div>
+<div class="debug">1351: R10G10B10A2_Unorm ✔</div>
+<div class="debug">1351: R11G11B10_UFloat ✔</div>
+<div class="debug">1351: R16G16B16A16_Float ✔</div>
+<div class="debug">1351: R32G32_Float ✔</div>
+<div class="debug">1352: R32G32B32A32_Float ✔</div>
+<div class="debug">1352: 💠 Created Texture[0(null)]</div>
+<div class="info">1353: ℹ️ CTexture_D3D11 initialized</div>
+<div class="trace">1353: CRenderer2D_D3D11::init()</div>
+<div class="debug">1354: 📤 BinaryReader: Opened resource &quot;/engine/shader/sprite.vs&quot; size: 936B</div>
+<div class="debug">1354: CShader_D3D11::createVSFromFile(): `/engine/shader/sprite.vs` is a precompiled shader file</div>
+<div class="debug">1355: 💠 Created VertexShader[1] </div>
+<div class="debug">1355: 📥 BinaryReader: Closed resource &quot;/engine/shader/sprite.vs&quot;</div>
+<div class="debug">1355: 📤 BinaryReader: Opened resource &quot;/engine/shader/fullscreen_triangle_resolve.vs&quot; size: 1KiB</div>
+<div class="debug">1356: CShader_D3D11::createVSFromFile(): `/engine/shader/fullscreen_triangle_resolve.vs` is a precompiled shader file</div>
+<div class="debug">1356: 💠 Created VertexShader[2] </div>
+<div class="debug">1357: 📥 BinaryReader: Closed resource &quot;/engine/shader/fullscreen_triangle_resolve.vs&quot;</div>
+<div class="debug">1357: 📤 BinaryReader: Opened resource &quot;/engine/shader/fullscreen_triangle_draw.vs&quot; size: 804B</div>
+<div class="debug">1357: CShader_D3D11::createVSFromFile(): `/engine/shader/fullscreen_triangle_draw.vs` is a precompiled shader file</div>
+<div class="debug">1358: 💠 Created VertexShader[3] </div>
+<div class="debug">1358: 📥 BinaryReader: Closed resource &quot;/engine/shader/fullscreen_triangle_draw.vs&quot;</div>
+<div class="debug">1358: 📤 BinaryReader: Opened resource &quot;/engine/shader/shape.ps&quot; size: 708B</div>
+<div class="debug">1359: CShader_D3D11::createVSFromFile(): `/engine/shader/shape.ps` is a precompiled shader file</div>
+<div class="debug">1359: 💠 Created PixelShader[3] </div>
+<div class="debug">1360: 📥 BinaryReader: Closed resource &quot;/engine/shader/shape.ps&quot;</div>
+<div class="debug">1360: 📤 BinaryReader: Opened resource &quot;/engine/shader/texture.ps&quot; size: 884B</div>
+<div class="debug">1360: CShader_D3D11::createVSFromFile(): `/engine/shader/texture.ps` is a precompiled shader file</div>
+<div class="debug">1361: 💠 Created PixelShader[4] </div>
+<div class="debug">1361: 📥 BinaryReader: Closed resource &quot;/engine/shader/texture.ps&quot;</div>
+<div class="debug">1362: 📤 BinaryReader: Opened resource &quot;/engine/shader/square_dot.ps&quot; size: 1.13KiB</div>
+<div class="debug">1362: CShader_D3D11::createVSFromFile(): `/engine/shader/square_dot.ps` is a precompiled shader file</div>
+<div class="debug">1363: 💠 Created PixelShader[5] </div>
+<div class="debug">1363: 📥 BinaryReader: Closed resource &quot;/engine/shader/square_dot.ps&quot;</div>
+<div class="debug">1363: 📤 BinaryReader: Opened resource &quot;/engine/shader/round_dot.ps&quot; size: 1.14KiB</div>
+<div class="debug">1363: CShader_D3D11::createVSFromFile(): `/engine/shader/round_dot.ps` is a precompiled shader file</div>
+<div class="debug">1364: 💠 Created PixelShader[6] </div>
+<div class="debug">1364: 📥 BinaryReader: Closed resource &quot;/engine/shader/round_dot.ps&quot;</div>
+<div class="debug">1365: 📤 BinaryReader: Opened resource &quot;/engine/shader/sdf.ps&quot; size: 1.28KiB</div>
+<div class="debug">1365: CShader_D3D11::createVSFromFile(): `/engine/shader/sdf.ps` is a precompiled shader file</div>
+<div class="debug">1366: 💠 Created PixelShader[7] </div>
+<div class="debug">1366: 📥 BinaryReader: Closed resource &quot;/engine/shader/sdf.ps&quot;</div>
+<div class="debug">1366: 📤 BinaryReader: Opened resource &quot;/engine/shader/fullscreen_triangle_resolve.ps&quot; size: 872B</div>
+<div class="debug">1367: CShader_D3D11::createVSFromFile(): `/engine/shader/fullscreen_triangle_resolve.ps` is a precompiled shader file</div>
+<div class="debug">1367: 💠 Created PixelShader[8] </div>
+<div class="debug">1368: 📥 BinaryReader: Closed resource &quot;/engine/shader/fullscreen_triangle_resolve.ps&quot;</div>
+<div class="debug">1368: 📤 BinaryReader: Opened resource &quot;/engine/shader/fullscreen_triangle_draw.ps&quot; size: 664B</div>
+<div class="debug">1368: CShader_D3D11::createVSFromFile(): `/engine/shader/fullscreen_triangle_draw.ps` is a precompiled shader file</div>
+<div class="debug">1369: 💠 Created PixelShader[9] </div>
+<div class="debug">1369: 📥 BinaryReader: Closed resource &quot;/engine/shader/fullscreen_triangle_draw.ps&quot;</div>
+<div class="debug">1370: 📤 BinaryReader: Opened resource &quot;/engine/texture/box-shadow/256.png&quot; size: 5.51KiB</div>
+<div class="debug">1377: 📥 BinaryReader: Closed resource &quot;/engine/texture/box-shadow/256.png&quot;</div>
+<div class="debug">1378: 📤 BinaryReader: Opened resource &quot;/engine/texture/box-shadow/128.png&quot; size: 2.5KiB</div>
+<div class="debug">1380: 📥 BinaryReader: Closed resource &quot;/engine/texture/box-shadow/128.png&quot;</div>
+<div class="debug">1381: 📤 BinaryReader: Opened resource &quot;/engine/texture/box-shadow/64.png&quot; size: 1.34KiB</div>
+<div class="debug">1381: 📥 BinaryReader: Closed resource &quot;/engine/texture/box-shadow/64.png&quot;</div>
+<div class="debug">1382: 📤 BinaryReader: Opened resource &quot;/engine/texture/box-shadow/32.png&quot; size: 617B</div>
+<div class="debug">1382: 📥 BinaryReader: Closed resource &quot;/engine/texture/box-shadow/32.png&quot;</div>
+<div class="debug">1383: 📤 BinaryReader: Opened resource &quot;/engine/texture/box-shadow/16.png&quot; size: 263B</div>
+<div class="debug">1383: 📥 BinaryReader: Closed resource &quot;/engine/texture/box-shadow/16.png&quot;</div>
+<div class="debug">1384: 📤 BinaryReader: Opened resource &quot;/engine/texture/box-shadow/8.png&quot; size: 140B</div>
+<div class="debug">1384: 📥 BinaryReader: Closed resource &quot;/engine/texture/box-shadow/8.png&quot;</div>
+<div class="debug">1385: 💠 Created Texture[1] (type: Normal, size: 256x256, format: R8G8B8A8_Unorm)</div>
+<div class="info">1386: ℹ️ CRenderer2D_D3D11 initialized</div>
+<div class="info">1386: ℹ️ CGraphics_D3D11 initialized</div>
+<div class="trace">1386: CScreenCapture::init()</div>
+<div class="debug">1386: Default Screenshot directory: &quot;C:/Users/takum/source/repos/test/test/App/Screenshot/&quot;</div>
+<div class="info">1387: ℹ️ CScreenCapture initialized</div>
+<div class="trace">1387: CFont::init()</div>
+<div class="debug">1393: 💠 Created Font[0(null)]</div>
+<div class="info">1393: ℹ️ CFont initialized</div>
+<div class="trace">1393: CSDFFont::init()</div>
+<div class="debug">1394: 💠 Created SDFFont[0(null)]</div>
+<div class="info">1394: ℹ️ CSDFFont initialized</div>
+<div class="trace">1394: CGUI::init()</div>
+<div class="debug">1397: 💠 Created Font[1] (`M+ 1p medium` size: 20)</div>
+<div class="info">1397: ℹ️ CGUI initialized</div>
+<div class="trace">1397: CEffect::init()</div>
+<div class="debug">1397: 💠 Created Effect[0(null)]</div>
+<div class="info">1398: ℹ️ CEffect initialized</div>
+<div class="trace">1398: CPrint::init()</div>
+<div class="debug">1400: 💠 Created Font[2] (`M+ 1p medium` size: 16)</div>
+<div class="info">1400: ℹ️ CPrint initialized</div>
+<div class="trace">1400: CAsset::init()</div>
+<div class="info">1400: ℹ️ Asset initialized</div>
+<div class="info">1401: ✅ Siv3D engine setup completed</div>
+<div class="trace">1401: MainThread</div>
+<hr width="99%"><div class="trace">1402: CScript::init()</div>
+<div class="debug">1567: 💠 Created Script[0(null)]</div>
+<div class="info">1568: ℹ️ CScript initialized</div>
+<div class="debug">1574: 💠 Created Texture[2] (type: Normal, size: 136x128, format: R8G8B8A8_Unorm)</div>
+<div class="debug">1579: 💠 Created Texture[3] (type: Normal, size: 136x128, format: R8G8B8A8_Unorm)</div>
+<div class="debug">1583: 💠 Created Texture[4] (type: Normal, size: 136x128, format: R8G8B8A8_Unorm)</div>
+<div class="debug">1589: 💠 Created Texture[5] (type: Normal, size: 136x128, format: R8G8B8A8_Unorm)</div>
+<div class="debug">1591: 💠 Created Font[3] (`M+ 1p regular` size: 50)</div>
+<div class="trace">1601: WM_PAINT</div>
+<div class="trace">1605: WM_SIZE</div>
+<div class="trace">1606: CWindow::updateWindowBounds(rect = (360, 92, 816, 639))</div>
+<div class="trace">1607: CWindow::requestBackBufferResizing()</div>
+<div class="trace">1609: CWindow::updateWindowBounds(rect = (360, 92, 816, 639))</div>
+<div class="debug">1748: 💠 Created Texture[6] (type: Dynamic, size: 1536x256, format: R8G8B8A8_Unorm)</div>
+<div class="debug">1749: ℹ️ Created font texture (size: 1536x256)</div>
+<div class="trace">9679: WM_DEVICECHANGE</div>
+<div class="trace">9680: CSystem::onDeviceChange()</div>
+<div class="trace">9722: WM_DEVICECHANGE</div>
+<div class="trace">9723: CSystem::onDeviceChange()</div>
+<div class="trace">20486: CWindow::updateWindowBounds(rect = (356, 92, 816, 639))</div>
+<div class="trace">20489: CWindow::updateWindowBounds(rect = (353, 91, 816, 639))</div>
+<div class="trace">20490: CWindow::updateWindowBounds(rect = (352, 91, 816, 639))</div>
+<div class="trace">20504: CWindow::updateWindowBounds(rect = (351, 90, 816, 639))</div>
+<div class="trace">20518: CWindow::updateWindowBounds(rect = (350, 90, 816, 639))</div>
+<div class="trace">20520: CWindow::updateWindowBounds(rect = (348, 90, 816, 639))</div>
+<div class="trace">20534: CWindow::updateWindowBounds(rect = (346, 90, 816, 639))</div>
+<div class="trace">20557: CWindow::updateWindowBounds(rect = (345, 89, 816, 639))</div>
+<div class="trace">20559: CWindow::updateWindowBounds(rect = (344, 89, 816, 639))</div>
+<div class="trace">20571: CWindow::updateWindowBounds(rect = (342, 89, 816, 639))</div>
+<div class="trace">20573: CWindow::updateWindowBounds(rect = (340, 89, 816, 639))</div>
+<div class="trace">20587: CWindow::updateWindowBounds(rect = (339, 89, 816, 639))</div>
+<div class="trace">20600: CWindow::updateWindowBounds(rect = (337, 89, 816, 639))</div>
+<div class="trace">20602: CWindow::updateWindowBounds(rect = (336, 89, 816, 639))</div>
+<div class="trace">20616: CWindow::updateWindowBounds(rect = (334, 88, 816, 639))</div>
+<div class="trace">20639: CWindow::updateWindowBounds(rect = (333, 88, 816, 639))</div>
+<div class="trace">20641: CWindow::updateWindowBounds(rect = (331, 88, 816, 639))</div>
+<div class="trace">20654: CWindow::updateWindowBounds(rect = (329, 87, 816, 639))</div>
+<div class="trace">20656: CWindow::updateWindowBounds(rect = (328, 87, 816, 639))</div>
+<div class="trace">20669: CWindow::updateWindowBounds(rect = (326, 87, 816, 639))</div>
+<div class="trace">20683: CWindow::updateWindowBounds(rect = (324, 86, 816, 639))</div>
+<div class="trace">20685: CWindow::updateWindowBounds(rect = (322, 86, 816, 639))</div>
+<div class="trace">20698: CWindow::updateWindowBounds(rect = (321, 86, 816, 639))</div>
+<div class="trace">20712: CWindow::updateWindowBounds(rect = (320, 86, 816, 639))</div>
+<div class="trace">20715: CWindow::updateWindowBounds(rect = (318, 86, 816, 639))</div>
+<div class="trace">20728: CWindow::updateWindowBounds(rect = (316, 85, 816, 639))</div>
+<div class="trace">20751: CWindow::updateWindowBounds(rect = (315, 85, 816, 639))</div>
+<div class="trace">20754: CWindow::updateWindowBounds(rect = (314, 85, 816, 639))</div>
+<div class="trace">20765: CWindow::updateWindowBounds(rect = (311, 84, 816, 639))</div>
+<div class="trace">20767: CWindow::updateWindowBounds(rect = (310, 84, 816, 639))</div>
+<div class="trace">20776: CWindow::updateWindowBounds(rect = (309, 84, 816, 639))</div>
+<div class="trace">20787: CWindow::updateWindowBounds(rect = (307, 84, 816, 639))</div>
+<div class="trace">20810: CWindow::updateWindowBounds(rect = (305, 84, 816, 639))</div>
+<div class="trace">20812: CWindow::updateWindowBounds(rect = (303, 83, 816, 639))</div>
+<div class="trace">20824: CWindow::updateWindowBounds(rect = (302, 83, 816, 639))</div>
+<div class="trace">20825: CWindow::updateWindowBounds(rect = (301, 82, 816, 639))</div>
+<div class="trace">20840: CWindow::updateWindowBounds(rect = (298, 82, 816, 639))</div>
+<div class="trace">20863: CWindow::updateWindowBounds(rect = (295, 81, 816, 639))</div>
+<div class="trace">20865: CWindow::updateWindowBounds(rect = (292, 81, 816, 639))</div>
+<div class="trace">20877: CWindow::updateWindowBounds(rect = (289, 81, 816, 639))</div>
+<div class="trace">20879: CWindow::updateWindowBounds(rect = (286, 81, 816, 639))</div>
+<div class="trace">20893: CWindow::updateWindowBounds(rect = (283, 80, 816, 639))</div>
+<div class="trace">20907: CWindow::updateWindowBounds(rect = (280, 79, 816, 639))</div>
+<div class="trace">20908: CWindow::updateWindowBounds(rect = (276, 79, 816, 639))</div>
+<div class="trace">20922: CWindow::updateWindowBounds(rect = (273, 78, 816, 639))</div>
+<div class="trace">20936: CWindow::updateWindowBounds(rect = (270, 78, 816, 639))</div>
+<div class="trace">20938: CWindow::updateWindowBounds(rect = (267, 77, 816, 639))</div>
+<div class="trace">20952: CWindow::updateWindowBounds(rect = (264, 77, 816, 639))</div>
+<div class="trace">20975: CWindow::updateWindowBounds(rect = (261, 76, 816, 639))</div>
+<div class="trace">20977: CWindow::updateWindowBounds(rect = (258, 75, 816, 639))</div>
+<div class="trace">20988: CWindow::updateWindowBounds(rect = (253, 75, 816, 639))</div>
+<div class="trace">20990: CWindow::updateWindowBounds(rect = (250, 74, 816, 639))</div>
+<div class="trace">21005: CWindow::updateWindowBounds(rect = (247, 74, 816, 639))</div>
+<div class="trace">21019: CWindow::updateWindowBounds(rect = (244, 74, 816, 639))</div>
+<div class="trace">21022: CWindow::updateWindowBounds(rect = (241, 73, 816, 639))</div>
+<div class="trace">21035: CWindow::updateWindowBounds(rect = (237, 73, 816, 639))</div>
+<div class="trace">21047: CWindow::updateWindowBounds(rect = (234, 72, 816, 639))</div>
+<div class="trace">21049: CWindow::updateWindowBounds(rect = (231, 71, 816, 639))</div>
+<div class="trace">21064: CWindow::updateWindowBounds(rect = (227, 71, 816, 639))</div>
+<div class="trace">21087: CWindow::updateWindowBounds(rect = (224, 71, 816, 639))</div>
+<div class="trace">21089: CWindow::updateWindowBounds(rect = (220, 71, 816, 639))</div>
+<div class="trace">21101: CWindow::updateWindowBounds(rect = (216, 70, 816, 639))</div>
+<div class="trace">21117: CWindow::updateWindowBounds(rect = (207, 69, 816, 639))</div>
+<div class="trace">21130: CWindow::updateWindowBounds(rect = (204, 68, 816, 639))</div>
+<div class="trace">21133: CWindow::updateWindowBounds(rect = (201, 68, 816, 639))</div>
+<div class="trace">21141: CWindow::updateWindowBounds(rect = (197, 67, 816, 639))</div>
+<div class="trace">21153: CWindow::updateWindowBounds(rect = (194, 67, 816, 639))</div>
+<div class="trace">21163: CWindow::updateWindowBounds(rect = (191, 66, 816, 639))</div>
+<div class="trace">21182: CWindow::updateWindowBounds(rect = (186, 66, 816, 639))</div>
+<div class="trace">21184: CWindow::updateWindowBounds(rect = (183, 66, 816, 639))</div>
+<div class="trace">21199: CWindow::updateWindowBounds(rect = (179, 66, 816, 639))</div>
+<div class="trace">21212: CWindow::updateWindowBounds(rect = (176, 65, 816, 639))</div>
+<div class="trace">21213: CWindow::updateWindowBounds(rect = (172, 65, 816, 639))</div>
+<div class="trace">21227: CWindow::updateWindowBounds(rect = (168, 64, 816, 639))</div>
+<div class="trace">21241: CWindow::updateWindowBounds(rect = (165, 64, 816, 639))</div>
+<div class="trace">21242: CWindow::updateWindowBounds(rect = (161, 64, 816, 639))</div>
+<div class="trace">21257: CWindow::updateWindowBounds(rect = (158, 64, 816, 639))</div>
+<div class="trace">21280: CWindow::updateWindowBounds(rect = (154, 63, 816, 639))</div>
+<div class="trace">21282: CWindow::updateWindowBounds(rect = (150, 63, 816, 639))</div>
+<div class="trace">21294: CWindow::updateWindowBounds(rect = (147, 63, 816, 639))</div>
+<div class="trace">21296: CWindow::updateWindowBounds(rect = (143, 63, 816, 639))</div>
+<div class="trace">21310: CWindow::updateWindowBounds(rect = (139, 63, 816, 639))</div>
+<div class="trace">21324: CWindow::updateWindowBounds(rect = (134, 63, 816, 639))</div>
+<div class="trace">21325: CWindow::updateWindowBounds(rect = (131, 64, 816, 639))</div>
+<div class="trace">21339: CWindow::updateWindowBounds(rect = (127, 65, 816, 639))</div>
+<div class="trace">21354: CWindow::updateWindowBounds(rect = (124, 65, 816, 639))</div>
+<div class="trace">21356: CWindow::updateWindowBounds(rect = (120, 66, 816, 639))</div>
+<div class="trace">21369: CWindow::updateWindowBounds(rect = (118, 67, 816, 639))</div>
+<div class="trace">21392: CWindow::updateWindowBounds(rect = (115, 68, 816, 639))</div>
+<div class="trace">21394: CWindow::updateWindowBounds(rect = (112, 69, 816, 639))</div>
+<div class="trace">21406: CWindow::updateWindowBounds(rect = (110, 71, 816, 639))</div>
+<div class="trace">21407: CWindow::updateWindowBounds(rect = (108, 72, 816, 639))</div>
+<div class="trace">21416: CWindow::updateWindowBounds(rect = (107, 73, 816, 639))</div>
+<div class="trace">21428: CWindow::updateWindowBounds(rect = (107, 74, 816, 639))</div>
+<div class="trace">21440: CWindow::updateWindowBounds(rect = (106, 75, 816, 639))</div>
+<div class="trace">21451: CWindow::updateWindowBounds(rect = (105, 76, 816, 639))</div>
+<div class="trace">21465: CWindow::updateWindowBounds(rect = (105, 77, 816, 639))</div>
+<div class="trace">21480: CWindow::updateWindowBounds(rect = (105, 78, 816, 639))</div>
+<div class="trace">21504: CWindow::updateWindowBounds(rect = (105, 79, 816, 639))</div>
+<div class="trace">21518: CWindow::updateWindowBounds(rect = (105, 80, 816, 639))</div>
+<div class="trace">21521: CWindow::updateWindowBounds(rect = (106, 81, 816, 639))</div>
+<div class="trace">21533: CWindow::updateWindowBounds(rect = (106, 84, 816, 639))</div>
+<div class="trace">21548: CWindow::updateWindowBounds(rect = (108, 87, 816, 639))</div>
+<div class="trace">21550: CWindow::updateWindowBounds(rect = (109, 89, 816, 639))</div>
+<div class="trace">21563: CWindow::updateWindowBounds(rect = (111, 91, 816, 639))</div>
+<div class="trace">21577: CWindow::updateWindowBounds(rect = (112, 94, 816, 639))</div>
+<div class="trace">21579: CWindow::updateWindowBounds(rect = (114, 96, 816, 639))</div>
+<div class="trace">21593: CWindow::updateWindowBounds(rect = (115, 98, 816, 639))</div>
+<div class="trace">21617: CWindow::updateWindowBounds(rect = (118, 100, 816, 639))</div>
+<div class="trace">21620: CWindow::updateWindowBounds(rect = (119, 103, 816, 639))</div>
+<div class="trace">21630: CWindow::updateWindowBounds(rect = (121, 105, 816, 639))</div>
+<div class="trace">21633: CWindow::updateWindowBounds(rect = (123, 106, 816, 639))</div>
+<div class="trace">21641: CWindow::updateWindowBounds(rect = (125, 109, 816, 639))</div>
+<div class="trace">21653: CWindow::updateWindowBounds(rect = (128, 111, 816, 639))</div>
+<div class="trace">21664: CWindow::updateWindowBounds(rect = (130, 112, 816, 639))</div>
+<div class="trace">21676: CWindow::updateWindowBounds(rect = (132, 115, 816, 639))</div>
+<div class="trace">21690: CWindow::updateWindowBounds(rect = (137, 119, 816, 639))</div>
+<div class="trace">21706: CWindow::updateWindowBounds(rect = (139, 121, 816, 639))</div>
+<div class="trace">21728: CWindow::updateWindowBounds(rect = (142, 122, 816, 639))</div>
+<div class="trace">21730: CWindow::updateWindowBounds(rect = (145, 125, 816, 639))</div>
+<div class="trace">21742: CWindow::updateWindowBounds(rect = (148, 126, 816, 639))</div>
+<div class="trace">21743: CWindow::updateWindowBounds(rect = (152, 129, 816, 639))</div>
+<div class="trace">21758: CWindow::updateWindowBounds(rect = (156, 131, 816, 639))</div>
+<div class="trace">21773: CWindow::updateWindowBounds(rect = (160, 133, 816, 639))</div>
+<div class="trace">21775: CWindow::updateWindowBounds(rect = (165, 136, 816, 639))</div>
+<div class="trace">21788: CWindow::updateWindowBounds(rect = (170, 137, 816, 639))</div>
+<div class="trace">21801: CWindow::updateWindowBounds(rect = (175, 140, 816, 639))</div>
+<div class="trace">21804: CWindow::updateWindowBounds(rect = (180, 142, 816, 639))</div>
+<div class="trace">21817: CWindow::updateWindowBounds(rect = (183, 143, 816, 639))</div>
+<div class="trace">21840: CWindow::updateWindowBounds(rect = (189, 145, 816, 639))</div>
+<div class="trace">21843: CWindow::updateWindowBounds(rect = (195, 147, 816, 639))</div>
+<div class="trace">21854: CWindow::updateWindowBounds(rect = (200, 149, 816, 639))</div>
+<div class="trace">21870: CWindow::updateWindowBounds(rect = (216, 153, 816, 639))</div>
+<div class="trace">21883: CWindow::updateWindowBounds(rect = (223, 154, 816, 639))</div>
+<div class="trace">21886: CWindow::updateWindowBounds(rect = (230, 156, 816, 639))</div>
+<div class="trace">21899: CWindow::updateWindowBounds(rect = (237, 157, 816, 639))</div>
+<div class="trace">21922: CWindow::updateWindowBounds(rect = (244, 158, 816, 639))</div>
+<div class="trace">21925: CWindow::updateWindowBounds(rect = (252, 159, 816, 639))</div>
+<div class="trace">21936: CWindow::updateWindowBounds(rect = (259, 161, 816, 639))</div>
+<div class="trace">21939: CWindow::updateWindowBounds(rect = (267, 162, 816, 639))</div>
+<div class="trace">21953: CWindow::updateWindowBounds(rect = (274, 163, 816, 639))</div>
+<div class="trace">21966: CWindow::updateWindowBounds(rect = (282, 164, 816, 639))</div>
+<div class="trace">21969: CWindow::updateWindowBounds(rect = (289, 165, 816, 639))</div>
+<div class="trace">21974: CWindow::updateWindowBounds(rect = (296, 166, 816, 639))</div>
+<div class="trace">21981: CWindow::updateWindowBounds(rect = (303, 166, 816, 639))</div>
+<div class="trace">21988: CWindow::updateWindowBounds(rect = (309, 167, 816, 639))</div>
+<div class="trace">22004: CWindow::updateWindowBounds(rect = (315, 167, 816, 639))</div>
+<div class="trace">22011: CWindow::updateWindowBounds(rect = (319, 167, 816, 639))</div>
+<div class="trace">22027: CWindow::updateWindowBounds(rect = (323, 167, 816, 639))</div>
+<div class="trace">22033: CWindow::updateWindowBounds(rect = (329, 167, 816, 639))</div>
+<div class="trace">22042: CWindow::updateWindowBounds(rect = (333, 168, 816, 639))</div>
+<div class="trace">22057: CWindow::updateWindowBounds(rect = (337, 168, 816, 639))</div>
+<div class="trace">22064: CWindow::updateWindowBounds(rect = (341, 168, 816, 639))</div>
+<div class="trace">22072: CWindow::updateWindowBounds(rect = (345, 168, 816, 639))</div>
+<div class="trace">22080: CWindow::updateWindowBounds(rect = (348, 168, 816, 639))</div>
+<div class="trace">22094: CWindow::updateWindowBounds(rect = (352, 168, 816, 639))</div>
+<div class="trace">22101: CWindow::updateWindowBounds(rect = (357, 167, 816, 639))</div>
+<div class="trace">22116: CWindow::updateWindowBounds(rect = (361, 167, 816, 639))</div>
+<div class="trace">22124: CWindow::updateWindowBounds(rect = (365, 167, 816, 639))</div>
+<div class="trace">22140: CWindow::updateWindowBounds(rect = (368, 166, 816, 639))</div>
+<div class="trace">22146: CWindow::updateWindowBounds(rect = (373, 165, 816, 639))</div>
+<div class="trace">22153: CWindow::updateWindowBounds(rect = (376, 163, 816, 639))</div>
+<div class="trace">22169: CWindow::updateWindowBounds(rect = (378, 163, 816, 639))</div>
+<div class="trace">22177: CWindow::updateWindowBounds(rect = (380, 161, 816, 639))</div>
+<div class="trace">22184: CWindow::updateWindowBounds(rect = (383, 159, 816, 639))</div>
+<div class="trace">22199: CWindow::updateWindowBounds(rect = (384, 156, 816, 639))</div>
+<div class="trace">22206: CWindow::updateWindowBounds(rect = (386, 151, 816, 639))</div>
+<div class="trace">22213: CWindow::updateWindowBounds(rect = (388, 145, 816, 639))</div>
+<div class="trace">22228: CWindow::updateWindowBounds(rect = (391, 136, 816, 639))</div>
+<div class="trace">22236: CWindow::updateWindowBounds(rect = (394, 125, 816, 639))</div>
+<div class="trace">22252: CWindow::updateWindowBounds(rect = (399, 111, 816, 639))</div>
+<div class="trace">22258: CWindow::updateWindowBounds(rect = (402, 99, 816, 639))</div>
+<div class="trace">22266: CWindow::updateWindowBounds(rect = (407, 85, 816, 639))</div>
+<div class="trace">22281: CWindow::updateWindowBounds(rect = (410, 71, 816, 639))</div>
+<div class="trace">22288: CWindow::updateWindowBounds(rect = (413, 61, 816, 639))</div>
+<div class="trace">22295: CWindow::updateWindowBounds(rect = (416, 50, 816, 639))</div>
+<div class="trace">22310: CWindow::updateWindowBounds(rect = (419, 39, 816, 639))</div>
+<div class="trace">22318: CWindow::updateWindowBounds(rect = (421, 29, 816, 639))</div>
+<div class="trace">22325: CWindow::updateWindowBounds(rect = (423, 21, 816, 639))</div>
+<div class="trace">22342: CWindow::updateWindowBounds(rect = (423, 20, 816, 639))</div>
+<div class="trace">22364: CWindow::updateWindowBounds(rect = (423, 16, 816, 639))</div>
+<div class="trace">22371: CWindow::updateWindowBounds(rect = (423, 13, 816, 639))</div>
+<div class="trace">22377: CWindow::updateWindowBounds(rect = (423, 9, 816, 639))</div>
+<div class="trace">22386: CWindow::updateWindowBounds(rect = (421, 5, 816, 639))</div>
+<div class="trace">22400: CWindow::updateWindowBounds(rect = (421, 2, 816, 639))</div>
+<div class="trace">22407: CWindow::updateWindowBounds(rect = (419, 0, 816, 639))</div>
+<div class="trace">22423: CWindow::updateWindowBounds(rect = (418, -2, 816, 639))</div>
+<div class="trace">22430: CWindow::updateWindowBounds(rect = (415, -5, 816, 639))</div>
+<div class="trace">22437: CWindow::updateWindowBounds(rect = (414, -6, 816, 639))</div>
+<div class="trace">22452: CWindow::updateWindowBounds(rect = (412, -7, 816, 639))</div>
+<div class="trace">22459: CWindow::updateWindowBounds(rect = (409, -9, 816, 639))</div>
+<div class="trace">22475: CWindow::updateWindowBounds(rect = (407, -10, 816, 639))</div>
+<div class="trace">22482: CWindow::updateWindowBounds(rect = (405, -12, 816, 639))</div>
+<div class="trace">22489: CWindow::updateWindowBounds(rect = (402, -13, 816, 639))</div>
+<div class="trace">22505: CWindow::updateWindowBounds(rect = (400, -14, 816, 639))</div>
+<div class="trace">22511: CWindow::updateWindowBounds(rect = (397, -14, 816, 639))</div>
+<div class="trace">22519: CWindow::updateWindowBounds(rect = (394, -14, 816, 639))</div>
+<div class="trace">22534: CWindow::updateWindowBounds(rect = (391, -14, 816, 639))</div>
+<div class="trace">22542: CWindow::updateWindowBounds(rect = (388, -14, 816, 639))</div>
+<div class="trace">22549: CWindow::updateWindowBounds(rect = (385, -14, 816, 639))</div>
+<div class="trace">22564: CWindow::updateWindowBounds(rect = (382, -14, 816, 639))</div>
+<div class="trace">22571: CWindow::updateWindowBounds(rect = (378, -14, 816, 639))</div>
+<div class="trace">22587: CWindow::updateWindowBounds(rect = (377, -14, 816, 639))</div>
+<div class="trace">22594: CWindow::updateWindowBounds(rect = (375, -14, 816, 639))</div>
+<div class="trace">22602: CWindow::updateWindowBounds(rect = (372, -14, 816, 639))</div>
+<div class="trace">22616: CWindow::updateWindowBounds(rect = (368, -14, 816, 639))</div>
+<div class="trace">22623: CWindow::updateWindowBounds(rect = (365, -14, 816, 639))</div>
+<div class="trace">22631: CWindow::updateWindowBounds(rect = (362, -14, 816, 639))</div>
+<div class="trace">22646: CWindow::updateWindowBounds(rect = (357, -14, 816, 639))</div>
+<div class="trace">22653: CWindow::updateWindowBounds(rect = (353, -14, 816, 639))</div>
+<div class="trace">22661: CWindow::updateWindowBounds(rect = (350, -14, 816, 639))</div>
+<div class="trace">22675: CWindow::updateWindowBounds(rect = (346, -14, 816, 639))</div>
+<div class="trace">22684: CWindow::updateWindowBounds(rect = (342, -13, 816, 639))</div>
+<div class="trace">22691: CWindow::updateWindowBounds(rect = (339, -13, 816, 639))</div>
+<div class="trace">22705: CWindow::updateWindowBounds(rect = (335, -12, 816, 639))</div>
+<div class="trace">22713: CWindow::updateWindowBounds(rect = (330, -12, 816, 639))</div>
+<div class="trace">22728: CWindow::updateWindowBounds(rect = (326, -12, 816, 639))</div>
+<div class="trace">22736: CWindow::updateWindowBounds(rect = (322, -11, 816, 639))</div>
+<div class="trace">22743: CWindow::updateWindowBounds(rect = (319, -11, 816, 639))</div>
+<div class="trace">22757: CWindow::updateWindowBounds(rect = (315, -11, 816, 639))</div>
+<div class="trace">22765: CWindow::updateWindowBounds(rect = (311, -10, 816, 639))</div>
+<div class="trace">22781: CWindow::updateWindowBounds(rect = (308, -10, 816, 639))</div>
+<div class="trace">22789: CWindow::updateWindowBounds(rect = (303, -9, 816, 639))</div>
+<div class="trace">22795: CWindow::updateWindowBounds(rect = (300, -9, 816, 639))</div>
+<div class="trace">22804: CWindow::updateWindowBounds(rect = (296, -8, 816, 639))</div>
+<div class="trace">22819: CWindow::updateWindowBounds(rect = (293, -7, 816, 639))</div>
+<div class="trace">22825: CWindow::updateWindowBounds(rect = (290, -7, 816, 639))</div>
+<div class="trace">22840: CWindow::updateWindowBounds(rect = (287, -7, 816, 639))</div>
+<div class="trace">22848: CWindow::updateWindowBounds(rect = (286, -6, 816, 639))</div>
+<div class="trace">22855: CWindow::updateWindowBounds(rect = (284, -5, 816, 639))</div>
+<div class="trace">22870: CWindow::updateWindowBounds(rect = (283, -4, 816, 639))</div>
+<div class="trace">22877: CWindow::updateWindowBounds(rect = (282, -4, 816, 639))</div>
+<div class="trace">22900: CWindow::updateWindowBounds(rect = (281, -3, 816, 639))</div>
+<div class="trace">22929: CWindow::updateWindowBounds(rect = (281, -2, 816, 639))</div>
+<div class="trace">22959: CWindow::updateWindowBounds(rect = (281, 0, 816, 639))</div>
+<div class="trace">22966: CWindow::updateWindowBounds(rect = (282, 2, 816, 639))</div>
+<div class="trace">22981: CWindow::updateWindowBounds(rect = (284, 4, 816, 639))</div>
+<div class="trace">22989: CWindow::updateWindowBounds(rect = (286, 6, 816, 639))</div>
+<div class="trace">23006: CWindow::updateWindowBounds(rect = (287, 8, 816, 639))</div>
+<div class="trace">23011: CWindow::updateWindowBounds(rect = (290, 10, 816, 639))</div>
+<div class="trace">23018: CWindow::updateWindowBounds(rect = (292, 12, 816, 639))</div>
+<div class="trace">23035: CWindow::updateWindowBounds(rect = (294, 14, 816, 639))</div>
+<div class="trace">23041: CWindow::updateWindowBounds(rect = (296, 16, 816, 639))</div>
+<div class="trace">23049: CWindow::updateWindowBounds(rect = (299, 17, 816, 639))</div>
+<div class="trace">23057: CWindow::updateWindowBounds(rect = (302, 19, 816, 639))</div>
+<div class="trace">23071: CWindow::updateWindowBounds(rect = (304, 20, 816, 639))</div>
+<div class="trace">23078: CWindow::updateWindowBounds(rect = (307, 22, 816, 639))</div>
+<div class="trace">23093: CWindow::updateWindowBounds(rect = (311, 23, 816, 639))</div>
+<div class="trace">23100: CWindow::updateWindowBounds(rect = (314, 25, 816, 639))</div>
+<div class="trace">23117: CWindow::updateWindowBounds(rect = (317, 27, 816, 639))</div>
+<div class="trace">23123: CWindow::updateWindowBounds(rect = (320, 27, 816, 639))</div>
+<div class="trace">23130: CWindow::updateWindowBounds(rect = (324, 29, 816, 639))</div>
+<div class="trace">23145: CWindow::updateWindowBounds(rect = (327, 30, 816, 639))</div>
+<div class="trace">23152: CWindow::updateWindowBounds(rect = (330, 31, 816, 639))</div>
+<div class="trace">23160: CWindow::updateWindowBounds(rect = (333, 32, 816, 639))</div>
+<div class="trace">23174: CWindow::updateWindowBounds(rect = (337, 33, 816, 639))</div>
+<div class="trace">23182: CWindow::updateWindowBounds(rect = (340, 34, 816, 639))</div>
+<div class="trace">23190: CWindow::updateWindowBounds(rect = (344, 35, 816, 639))</div>
+<div class="trace">23205: CWindow::updateWindowBounds(rect = (348, 36, 816, 639))</div>
+<div class="trace">23212: CWindow::updateWindowBounds(rect = (352, 36, 816, 639))</div>
+<div class="trace">23229: CWindow::updateWindowBounds(rect = (357, 37, 816, 639))</div>
+<div class="trace">23235: CWindow::updateWindowBounds(rect = (362, 38, 816, 639))</div>
+<div class="trace">23242: CWindow::updateWindowBounds(rect = (369, 39, 816, 639))</div>
+<div class="trace">23257: CWindow::updateWindowBounds(rect = (376, 40, 816, 639))</div>
+<div class="trace">23265: CWindow::updateWindowBounds(rect = (383, 41, 816, 639))</div>
+<div class="trace">23273: CWindow::updateWindowBounds(rect = (390, 42, 816, 639))</div>
+<div class="trace">23287: CWindow::updateWindowBounds(rect = (394, 42, 816, 639))</div>
+<div class="trace">23295: CWindow::updateWindowBounds(rect = (401, 43, 816, 639))</div>
+<div class="trace">23302: CWindow::updateWindowBounds(rect = (409, 43, 816, 639))</div>
+<div class="trace">23317: CWindow::updateWindowBounds(rect = (417, 43, 816, 639))</div>
+<div class="trace">23324: CWindow::updateWindowBounds(rect = (425, 43, 816, 639))</div>
+<div class="trace">23340: CWindow::updateWindowBounds(rect = (434, 43, 816, 639))</div>
+<div class="trace">23347: CWindow::updateWindowBounds(rect = (443, 43, 816, 639))</div>
+<div class="trace">23355: CWindow::updateWindowBounds(rect = (453, 43, 816, 639))</div>
+<div class="trace">23369: CWindow::updateWindowBounds(rect = (465, 42, 816, 639))</div>
+<div class="trace">23377: CWindow::updateWindowBounds(rect = (473, 42, 816, 639))</div>
+<div class="trace">23384: CWindow::updateWindowBounds(rect = (485, 41, 816, 639))</div>
+<div class="trace">23399: CWindow::updateWindowBounds(rect = (497, 40, 816, 639))</div>
+<div class="trace">23407: CWindow::updateWindowBounds(rect = (508, 39, 816, 639))</div>
+<div class="trace">23424: CWindow::updateWindowBounds(rect = (520, 38, 816, 639))</div>
+<div class="trace">23429: CWindow::updateWindowBounds(rect = (528, 37, 816, 639))</div>
+<div class="trace">23436: CWindow::updateWindowBounds(rect = (537, 36, 816, 639))</div>
+<div class="trace">23452: CWindow::updateWindowBounds(rect = (545, 36, 816, 639))</div>
+<div class="trace">23459: CWindow::updateWindowBounds(rect = (553, 36, 816, 639))</div>
+<div class="trace">23466: CWindow::updateWindowBounds(rect = (561, 35, 816, 639))</div>
+<div class="trace">23481: CWindow::updateWindowBounds(rect = (568, 35, 816, 639))</div>
+<div class="trace">23489: CWindow::updateWindowBounds(rect = (576, 35, 816, 639))</div>
+<div class="trace">23496: CWindow::updateWindowBounds(rect = (583, 36, 816, 639))</div>
+<div class="trace">23511: CWindow::updateWindowBounds(rect = (589, 37, 816, 639))</div>
+<div class="trace">23518: CWindow::updateWindowBounds(rect = (596, 39, 816, 639))</div>
+<div class="trace">23535: CWindow::updateWindowBounds(rect = (602, 41, 816, 639))</div>
+<div class="trace">23541: CWindow::updateWindowBounds(rect = (607, 43, 816, 639))</div>
+<div class="trace">23549: CWindow::updateWindowBounds(rect = (613, 45, 816, 639))</div>
+<div class="trace">23556: CWindow::updateWindowBounds(rect = (619, 48, 816, 639))</div>
+<div class="trace">23571: CWindow::updateWindowBounds(rect = (624, 50, 816, 639))</div>
+<div class="trace">23578: CWindow::updateWindowBounds(rect = (627, 53, 816, 639))</div>
+<div class="trace">23593: CWindow::updateWindowBounds(rect = (632, 56, 816, 639))</div>
+<div class="trace">23601: CWindow::updateWindowBounds(rect = (635, 59, 816, 639))</div>
+<div class="trace">23608: CWindow::updateWindowBounds(rect = (639, 63, 816, 639))</div>
+<div class="trace">23623: CWindow::updateWindowBounds(rect = (642, 65, 816, 639))</div>
+<div class="trace">23630: CWindow::updateWindowBounds(rect = (645, 68, 816, 639))</div>
+<div class="trace">23647: CWindow::updateWindowBounds(rect = (647, 70, 816, 639))</div>
+<div class="trace">23653: CWindow::updateWindowBounds(rect = (649, 72, 816, 639))</div>
+<div class="trace">23660: CWindow::updateWindowBounds(rect = (651, 74, 816, 639))</div>
+<div class="trace">23676: CWindow::updateWindowBounds(rect = (651, 75, 816, 639))</div>
+<div class="trace">23682: CWindow::updateWindowBounds(rect = (652, 76, 816, 639))</div>
+<div class="trace">23690: CWindow::updateWindowBounds(rect = (652, 78, 816, 639))</div>
+<div class="trace">23705: CWindow::updateWindowBounds(rect = (653, 78, 816, 639))</div>
+<div class="trace">23712: CWindow::updateWindowBounds(rect = (653, 79, 816, 639))</div>
+<div class="trace">23758: CWindow::updateWindowBounds(rect = (653, 80, 816, 639))</div>
+<div class="trace">23765: CWindow::updateWindowBounds(rect = (652, 80, 816, 639))</div>
+<div class="trace">23772: CWindow::updateWindowBounds(rect = (652, 81, 816, 639))</div>
+<div class="trace">23788: CWindow::updateWindowBounds(rect = (651, 82, 816, 639))</div>
+<div class="trace">23794: CWindow::updateWindowBounds(rect = (651, 83, 816, 639))</div>
+<div class="trace">23802: CWindow::updateWindowBounds(rect = (650, 84, 816, 639))</div>
+<div class="trace">23810: CWindow::updateWindowBounds(rect = (650, 85, 816, 639))</div>
+<div class="trace">23824: CWindow::updateWindowBounds(rect = (649, 86, 816, 639))</div>
+<div class="trace">23832: CWindow::updateWindowBounds(rect = (648, 86, 816, 639))</div>
+<div class="trace">23846: CWindow::updateWindowBounds(rect = (647, 87, 816, 639))</div>
+<div class="trace">23854: CWindow::updateWindowBounds(rect = (647, 88, 816, 639))</div>
+<div class="trace">23870: CWindow::updateWindowBounds(rect = (646, 89, 816, 639))</div>
+<div class="trace">23876: CWindow::updateWindowBounds(rect = (645, 91, 816, 639))</div>
+<div class="trace">23884: CWindow::updateWindowBounds(rect = (643, 93, 816, 639))</div>
+<div class="trace">23899: CWindow::updateWindowBounds(rect = (641, 95, 816, 639))</div>
+<div class="trace">23906: CWindow::updateWindowBounds(rect = (639, 97, 816, 639))</div>
+<div class="trace">23914: CWindow::updateWindowBounds(rect = (638, 98, 816, 639))</div>
+<div class="trace">23929: CWindow::updateWindowBounds(rect = (636, 100, 816, 639))</div>
+<div class="trace">23936: CWindow::updateWindowBounds(rect = (634, 101, 816, 639))</div>
+<div class="trace">23943: CWindow::updateWindowBounds(rect = (632, 104, 816, 639))</div>
+<div class="trace">23958: CWindow::updateWindowBounds(rect = (630, 105, 816, 639))</div>
+<div class="trace">23966: CWindow::updateWindowBounds(rect = (628, 107, 816, 639))</div>
+<div class="trace">23982: CWindow::updateWindowBounds(rect = (626, 108, 816, 639))</div>
+<div class="trace">23988: CWindow::updateWindowBounds(rect = (624, 110, 816, 639))</div>
+<div class="trace">23996: CWindow::updateWindowBounds(rect = (622, 110, 816, 639))</div>
+<div class="trace">24011: CWindow::updateWindowBounds(rect = (619, 112, 816, 639))</div>
+<div class="trace">24018: CWindow::updateWindowBounds(rect = (617, 113, 816, 639))</div>
+<div class="trace">24025: CWindow::updateWindowBounds(rect = (615, 115, 816, 639))</div>
+<div class="trace">24040: CWindow::updateWindowBounds(rect = (613, 115, 816, 639))</div>
+<div class="trace">24048: CWindow::updateWindowBounds(rect = (611, 117, 816, 639))</div>
+<div class="trace">24055: CWindow::updateWindowBounds(rect = (607, 118, 816, 639))</div>
+<div class="trace">24070: CWindow::updateWindowBounds(rect = (605, 118, 816, 639))</div>
+<div class="trace">24078: CWindow::updateWindowBounds(rect = (604, 119, 816, 639))</div>
+<div class="trace">24094: CWindow::updateWindowBounds(rect = (603, 120, 816, 639))</div>
+<div class="trace">24100: CWindow::updateWindowBounds(rect = (601, 120, 816, 639))</div>
+<div class="trace">24108: CWindow::updateWindowBounds(rect = (600, 121, 816, 639))</div>
+<div class="trace">24122: CWindow::updateWindowBounds(rect = (598, 121, 816, 639))</div>
+<div class="trace">24130: CWindow::updateWindowBounds(rect = (596, 121, 816, 639))</div>
+<div class="trace">24138: CWindow::updateWindowBounds(rect = (594, 121, 816, 639))</div>
+<div class="trace">24153: CWindow::updateWindowBounds(rect = (593, 121, 816, 639))</div>
+<div class="trace">24160: CWindow::updateWindowBounds(rect = (591, 121, 816, 639))</div>
+<div class="trace">24176: CWindow::updateWindowBounds(rect = (589, 121, 816, 639))</div>
+<div class="trace">24182: CWindow::updateWindowBounds(rect = (587, 121, 816, 639))</div>
+<div class="trace">24189: CWindow::updateWindowBounds(rect = (585, 121, 816, 639))</div>
+<div class="trace">24198: CWindow::updateWindowBounds(rect = (583, 121, 816, 639))</div>
+<div class="trace">24212: CWindow::updateWindowBounds(rect = (582, 121, 816, 639))</div>
+<div class="trace">24219: CWindow::updateWindowBounds(rect = (580, 121, 816, 639))</div>
+<div class="trace">24235: CWindow::updateWindowBounds(rect = (577, 120, 816, 639))</div>
+<div class="trace">24242: CWindow::updateWindowBounds(rect = (574, 120, 816, 639))</div>
+<div class="trace">24250: CWindow::updateWindowBounds(rect = (570, 119, 816, 639))</div>
+<div class="trace">24265: CWindow::updateWindowBounds(rect = (567, 118, 816, 639))</div>
+<div class="trace">24272: CWindow::updateWindowBounds(rect = (564, 117, 816, 639))</div>
+<div class="trace">24289: CWindow::updateWindowBounds(rect = (561, 117, 816, 639))</div>
+<div class="trace">24294: CWindow::updateWindowBounds(rect = (558, 115, 816, 639))</div>
+<div class="trace">24302: CWindow::updateWindowBounds(rect = (555, 114, 816, 639))</div>
+<div class="trace">24310: CWindow::updateWindowBounds(rect = (552, 113, 816, 639))</div>
+<div class="trace">24324: CWindow::updateWindowBounds(rect = (549, 113, 816, 639))</div>
+<div class="trace">24331: CWindow::updateWindowBounds(rect = (545, 111, 816, 639))</div>
+<div class="trace">24346: CWindow::updateWindowBounds(rect = (542, 110, 816, 639))</div>
+<div class="trace">24354: CWindow::updateWindowBounds(rect = (538, 109, 816, 639))</div>
+<div class="trace">24361: CWindow::updateWindowBounds(rect = (534, 108, 816, 639))</div>
+<div class="trace">24376: CWindow::updateWindowBounds(rect = (531, 107, 816, 639))</div>
+<div class="trace">24383: CWindow::updateWindowBounds(rect = (528, 105, 816, 639))</div>
+<div class="trace">24399: CWindow::updateWindowBounds(rect = (525, 104, 816, 639))</div>
+<div class="trace">24405: CWindow::updateWindowBounds(rect = (522, 103, 816, 639))</div>
+<div class="trace">24413: CWindow::updateWindowBounds(rect = (519, 101, 816, 639))</div>
+<div class="trace">24422: CWindow::updateWindowBounds(rect = (516, 100, 816, 639))</div>
+<div class="trace">24436: CWindow::updateWindowBounds(rect = (514, 98, 816, 639))</div>
+<div class="trace">24443: CWindow::updateWindowBounds(rect = (511, 97, 816, 639))</div>
+<div class="trace">24452: CWindow::updateWindowBounds(rect = (509, 96, 816, 639))</div>
+<div class="trace">24465: CWindow::updateWindowBounds(rect = (506, 94, 816, 639))</div>
+<div class="trace">24473: CWindow::updateWindowBounds(rect = (504, 93, 816, 639))</div>
+<div class="trace">24488: CWindow::updateWindowBounds(rect = (501, 91, 816, 639))</div>
+<div class="trace">24495: CWindow::updateWindowBounds(rect = (499, 90, 816, 639))</div>
+<div class="trace">24511: CWindow::updateWindowBounds(rect = (496, 88, 816, 639))</div>
+<div class="trace">24517: CWindow::updateWindowBounds(rect = (494, 87, 816, 639))</div>
+<div class="trace">24525: CWindow::updateWindowBounds(rect = (492, 85, 816, 639))</div>
+<div class="trace">24541: CWindow::updateWindowBounds(rect = (491, 84, 816, 639))</div>
+<div class="trace">24548: CWindow::updateWindowBounds(rect = (488, 82, 816, 639))</div>
+<div class="trace">24555: CWindow::updateWindowBounds(rect = (486, 80, 816, 639))</div>
+<div class="trace">24564: CWindow::updateWindowBounds(rect = (485, 79, 816, 639))</div>
+<div class="trace">24577: CWindow::updateWindowBounds(rect = (483, 76, 816, 639))</div>
+<div class="trace">24585: CWindow::updateWindowBounds(rect = (482, 74, 816, 639))</div>
+<div class="trace">24602: CWindow::updateWindowBounds(rect = (480, 72, 816, 639))</div>
+<div class="trace">24608: CWindow::updateWindowBounds(rect = (480, 71, 816, 639))</div>
+<div class="trace">24623: CWindow::updateWindowBounds(rect = (479, 69, 816, 639))</div>
+<div class="trace">24629: CWindow::updateWindowBounds(rect = (479, 68, 816, 639))</div>
+<div class="trace">24637: CWindow::updateWindowBounds(rect = (479, 67, 816, 639))</div>
+<div class="trace">24652: CWindow::updateWindowBounds(rect = (479, 65, 816, 639))</div>
+<div class="trace">24659: CWindow::updateWindowBounds(rect = (478, 63, 816, 639))</div>
+<div class="trace">24681: CWindow::updateWindowBounds(rect = (478, 61, 816, 639))</div>
+<div class="trace">24689: CWindow::updateWindowBounds(rect = (478, 59, 816, 639))</div>
+<div class="trace">24696: CWindow::updateWindowBounds(rect = (479, 59, 816, 639))</div>
+<div class="trace">24711: CWindow::updateWindowBounds(rect = (480, 57, 816, 639))</div>
+<div class="trace">24719: CWindow::updateWindowBounds(rect = (482, 54, 816, 639))</div>
+<div class="trace">24735: CWindow::updateWindowBounds(rect = (484, 53, 816, 639))</div>
+<div class="trace">24741: CWindow::updateWindowBounds(rect = (486, 51, 816, 639))</div>
+<div class="trace">24749: CWindow::updateWindowBounds(rect = (487, 49, 816, 639))</div>
+<div class="trace">24764: CWindow::updateWindowBounds(rect = (490, 47, 816, 639))</div>
+<div class="trace">24772: CWindow::updateWindowBounds(rect = (491, 45, 816, 639))</div>
+<div class="trace">24779: CWindow::updateWindowBounds(rect = (493, 43, 816, 639))</div>
+<div class="trace">24794: CWindow::updateWindowBounds(rect = (493, 42, 816, 639))</div>
+<div class="trace">24802: CWindow::updateWindowBounds(rect = (495, 41, 816, 639))</div>
+<div class="trace">24824: CWindow::updateWindowBounds(rect = (496, 40, 816, 639))</div>
+<div class="trace">24854: CWindow::updateWindowBounds(rect = (498, 39, 816, 639))</div>
+<div class="trace">24868: CWindow::updateWindowBounds(rect = (499, 39, 816, 639))</div>
+<div class="trace">24872: CWindow::updateWindowBounds(rect = (500, 38, 816, 639))</div>
+<div class="trace">24884: CWindow::updateWindowBounds(rect = (502, 38, 816, 639))</div>
+<div class="trace">24898: CWindow::updateWindowBounds(rect = (504, 38, 816, 639))</div>
+<div class="trace">24901: CWindow::updateWindowBounds(rect = (506, 38, 816, 639))</div>
+<div class="trace">24908: CWindow::updateWindowBounds(rect = (507, 38, 816, 639))</div>
+<div class="trace">24920: CWindow::updateWindowBounds(rect = (509, 38, 816, 639))</div>
+<div class="trace">24942: CWindow::updateWindowBounds(rect = (511, 38, 816, 639))</div>
+<div class="trace">24945: CWindow::updateWindowBounds(rect = (513, 38, 816, 639))</div>
+<div class="trace">24967: CWindow::updateWindowBounds(rect = (514, 38, 816, 639))</div>
+<div class="trace">24969: CWindow::updateWindowBounds(rect = (516, 38, 816, 639))</div>
+<div class="trace">24981: CWindow::updateWindowBounds(rect = (517, 38, 816, 639))</div>
+<div class="trace">24985: CWindow::updateWindowBounds(rect = (519, 38, 816, 639))</div>
+<div class="trace">24996: CWindow::updateWindowBounds(rect = (522, 38, 816, 639))</div>
+<div class="trace">25010: CWindow::updateWindowBounds(rect = (523, 38, 816, 639))</div>
+<div class="trace">25014: CWindow::updateWindowBounds(rect = (525, 38, 816, 639))</div>
+<div class="trace">25021: CWindow::updateWindowBounds(rect = (527, 38, 816, 639))</div>
+<div class="trace">25032: CWindow::updateWindowBounds(rect = (528, 38, 816, 639))</div>
+<div class="trace">25055: CWindow::updateWindowBounds(rect = (531, 38, 816, 639))</div>
+<div class="trace">25057: CWindow::updateWindowBounds(rect = (532, 38, 816, 639))</div>
+<div class="trace">25078: CWindow::updateWindowBounds(rect = (533, 38, 816, 639))</div>
+<div class="trace">25081: CWindow::updateWindowBounds(rect = (535, 38, 816, 639))</div>
+<div class="trace">25092: CWindow::updateWindowBounds(rect = (537, 38, 816, 639))</div>
+<div class="trace">25096: CWindow::updateWindowBounds(rect = (538, 38, 816, 639))</div>
+<div class="trace">25103: CWindow::updateWindowBounds(rect = (539, 38, 816, 639))</div>
+<div class="trace">25114: CWindow::updateWindowBounds(rect = (540, 38, 816, 639))</div>
+<div class="trace">25130: CWindow::updateWindowBounds(rect = (542, 38, 816, 639))</div>
+<div class="trace">25132: CWindow::updateWindowBounds(rect = (543, 38, 816, 639))</div>
+<div class="trace">25143: CWindow::updateWindowBounds(rect = (544, 38, 816, 639))</div>
+<div class="trace">25168: CWindow::updateWindowBounds(rect = (546, 38, 816, 639))</div>
+<div class="trace">25190: CWindow::updateWindowBounds(rect = (547, 38, 816, 639))</div>
+<div class="trace">25194: CWindow::updateWindowBounds(rect = (548, 38, 816, 639))</div>
+<div class="trace">25204: CWindow::updateWindowBounds(rect = (549, 38, 816, 639))</div>
+<div class="trace">25206: CWindow::updateWindowBounds(rect = (550, 38, 816, 639))</div>
+<div class="trace">25214: CWindow::updateWindowBounds(rect = (552, 38, 816, 639))</div>
+<div class="trace">25226: CWindow::updateWindowBounds(rect = (553, 38, 816, 639))</div>
+<div class="trace">25238: CWindow::updateWindowBounds(rect = (555, 38, 816, 639))</div>
+<div class="trace">25249: CWindow::updateWindowBounds(rect = (557, 38, 816, 639))</div>
+<div class="trace">25263: CWindow::updateWindowBounds(rect = (558, 38, 816, 639))</div>
+<div class="trace">25266: CWindow::updateWindowBounds(rect = (559, 38, 816, 639))</div>
+<div class="trace">25278: CWindow::updateWindowBounds(rect = (560, 39, 816, 639))</div>
+<div class="trace">25293: CWindow::updateWindowBounds(rect = (562, 39, 816, 639))</div>
+<div class="trace">25296: CWindow::updateWindowBounds(rect = (563, 40, 816, 639))</div>
+<div class="trace">25305: CWindow::updateWindowBounds(rect = (564, 40, 816, 639))</div>
+<div class="trace">25331: CWindow::updateWindowBounds(rect = (566, 41, 816, 639))</div>
+<div class="trace">25333: CWindow::updateWindowBounds(rect = (566, 42, 816, 639))</div>
+<div class="trace">25345: CWindow::updateWindowBounds(rect = (568, 42, 816, 639))</div>
+<div class="trace">25348: CWindow::updateWindowBounds(rect = (569, 43, 816, 639))</div>
+<div class="trace">25360: CWindow::updateWindowBounds(rect = (570, 43, 816, 639))</div>
+<div class="trace">25383: CWindow::updateWindowBounds(rect = (570, 45, 816, 639))</div>
+<div class="trace">25387: CWindow::updateWindowBounds(rect = (570, 44, 816, 639))</div>
+<div class="trace">25469: CWindow::updateWindowBounds(rect = (573, 47, 816, 639))</div>
+<div class="trace">25473: CWindow::updateWindowBounds(rect = (575, 48, 816, 639))</div>
+<div class="trace">25495: CWindow::updateWindowBounds(rect = (576, 49, 816, 639))</div>
+<div class="trace">25498: CWindow::updateWindowBounds(rect = (579, 51, 816, 639))</div>
+<div class="trace">25508: CWindow::updateWindowBounds(rect = (581, 52, 816, 639))</div>
+<div class="trace">25525: CWindow::updateWindowBounds(rect = (586, 56, 816, 639))</div>
+<div class="trace">25539: CWindow::updateWindowBounds(rect = (590, 58, 816, 639))</div>
+<div class="trace">25543: CWindow::updateWindowBounds(rect = (592, 59, 816, 639))</div>
+<div class="trace">25549: CWindow::updateWindowBounds(rect = (594, 61, 816, 639))</div>
+<div class="trace">25561: CWindow::updateWindowBounds(rect = (596, 62, 816, 639))</div>
+<div class="trace">25573: CWindow::updateWindowBounds(rect = (599, 64, 816, 639))</div>
+<div class="trace">25584: CWindow::updateWindowBounds(rect = (600, 64, 816, 639))</div>
+<div class="trace">25608: CWindow::updateWindowBounds(rect = (601, 65, 816, 639))</div>
+<div class="trace">25610: CWindow::updateWindowBounds(rect = (602, 66, 816, 639))</div>
+<div class="trace">25622: CWindow::updateWindowBounds(rect = (604, 67, 816, 639))</div>
+<div class="trace">25624: CWindow::updateWindowBounds(rect = (606, 68, 816, 639))</div>
+<div class="trace">25632: CWindow::updateWindowBounds(rect = (607, 69, 816, 639))</div>
+<div class="trace">25643: CWindow::updateWindowBounds(rect = (609, 70, 816, 639))</div>
+<div class="trace">25668: CWindow::updateWindowBounds(rect = (611, 72, 816, 639))</div>
+<div class="trace">25671: CWindow::updateWindowBounds(rect = (613, 72, 816, 639))</div>
+<div class="trace">25681: CWindow::updateWindowBounds(rect = (615, 74, 816, 639))</div>
+<div class="trace">25684: CWindow::updateWindowBounds(rect = (618, 76, 816, 639))</div>
+<div class="trace">25696: CWindow::updateWindowBounds(rect = (621, 78, 816, 639))</div>
+<div class="trace">25719: CWindow::updateWindowBounds(rect = (623, 79, 816, 639))</div>
+<div class="trace">25721: CWindow::updateWindowBounds(rect = (625, 81, 816, 639))</div>
+<div class="trace">25733: CWindow::updateWindowBounds(rect = (628, 82, 816, 639))</div>
+<div class="trace">25736: CWindow::updateWindowBounds(rect = (631, 83, 816, 639))</div>
+<div class="trace">25749: CWindow::updateWindowBounds(rect = (634, 85, 816, 639))</div>
+<div class="trace">25763: CWindow::updateWindowBounds(rect = (636, 85, 816, 639))</div>
+<div class="trace">25778: CWindow::updateWindowBounds(rect = (643, 89, 816, 639))</div>
+<div class="trace">25793: CWindow::updateWindowBounds(rect = (646, 90, 816, 639))</div>
+<div class="trace">25796: CWindow::updateWindowBounds(rect = (649, 91, 816, 639))</div>
+<div class="trace">25808: CWindow::updateWindowBounds(rect = (652, 92, 816, 639))</div>
+<div class="trace">25831: CWindow::updateWindowBounds(rect = (655, 93, 816, 639))</div>
+<div class="trace">25835: CWindow::updateWindowBounds(rect = (658, 94, 816, 639))</div>
+<div class="trace">25845: CWindow::updateWindowBounds(rect = (661, 95, 816, 639))</div>
+<div class="trace">25847: CWindow::updateWindowBounds(rect = (664, 95, 816, 639))</div>
+<div class="trace">25882: CWindow::updateWindowBounds(rect = (668, 96, 816, 639))</div>
+<div class="trace">25894: CWindow::updateWindowBounds(rect = (674, 99, 816, 639))</div>
+<div class="trace">25896: CWindow::updateWindowBounds(rect = (677, 99, 816, 639))</div>
+<div class="trace">25919: CWindow::updateWindowBounds(rect = (680, 101, 816, 639))</div>
+<div class="trace">25920: CWindow::updateWindowBounds(rect = (683, 102, 816, 639))</div>
+<div class="trace">25943: CWindow::updateWindowBounds(rect = (686, 103, 816, 639))</div>
+<div class="trace">25946: CWindow::updateWindowBounds(rect = (692, 105, 816, 639))</div>
+<div class="trace">25956: CWindow::updateWindowBounds(rect = (694, 106, 816, 639))</div>
+<div class="trace">25959: CWindow::updateWindowBounds(rect = (696, 107, 816, 639))</div>
+<div class="trace">25965: CWindow::updateWindowBounds(rect = (698, 108, 816, 639))</div>
+<div class="trace">25972: CWindow::updateWindowBounds(rect = (699, 109, 816, 639))</div>
+<div class="trace">25980: CWindow::updateWindowBounds(rect = (700, 109, 816, 639))</div>
+<div class="trace">25995: CWindow::updateWindowBounds(rect = (701, 110, 816, 639))</div>
+<div class="trace">26002: CWindow::updateWindowBounds(rect = (702, 111, 816, 639))</div>
+<div class="trace">26009: CWindow::updateWindowBounds(rect = (703, 111, 816, 639))</div>
+<div class="trace">26032: CWindow::updateWindowBounds(rect = (704, 111, 816, 639))</div>
+<div class="trace">26047: CWindow::updateWindowBounds(rect = (704, 112, 816, 639))</div>
+<div class="trace">26062: CWindow::updateWindowBounds(rect = (704, 113, 816, 639))</div>
+<div class="trace">26114: CWindow::updateWindowBounds(rect = (704, 114, 816, 639))</div>
+<div class="trace">26174: CWindow::updateWindowBounds(rect = (704, 115, 816, 639))</div>
+<div class="trace">26239: CWindow::updateWindowBounds(rect = (704, 116, 816, 639))</div>
+<div class="trace">26277: CWindow::updateWindowBounds(rect = (704, 117, 816, 639))</div>
+<div class="trace">26321: CWindow::updateWindowBounds(rect = (703, 117, 816, 639))</div>
+<div class="trace">26359: CWindow::updateWindowBounds(rect = (702, 117, 816, 639))</div>
+<div class="trace">26362: CWindow::updateWindowBounds(rect = (702, 118, 816, 639))</div>
+<div class="trace">26403: CWindow::updateWindowBounds(rect = (701, 118, 816, 639))</div>
+<div class="trace">26433: CWindow::updateWindowBounds(rect = (700, 118, 816, 639))</div>
+<div class="trace">26470: CWindow::updateWindowBounds(rect = (699, 118, 816, 639))</div>
+<div class="trace">26485: CWindow::updateWindowBounds(rect = (698, 118, 816, 639))</div>
+<div class="trace">26517: CWindow::updateWindowBounds(rect = (697, 118, 816, 639))</div>
+<div class="trace">26538: CWindow::updateWindowBounds(rect = (696, 118, 816, 639))</div>
+<div class="trace">26562: CWindow::updateWindowBounds(rect = (694, 118, 816, 639))</div>
+<div class="trace">26565: CWindow::updateWindowBounds(rect = (693, 118, 816, 639))</div>
+<div class="trace">26584: CWindow::updateWindowBounds(rect = (692, 118, 816, 639))</div>
+<div class="trace">26587: CWindow::updateWindowBounds(rect = (690, 118, 816, 639))</div>
+<div class="trace">26599: CWindow::updateWindowBounds(rect = (689, 118, 816, 639))</div>
+<div class="trace">26614: CWindow::updateWindowBounds(rect = (688, 117, 816, 639))</div>
+<div class="trace">26628: CWindow::updateWindowBounds(rect = (686, 117, 816, 639))</div>
+<div class="trace">26630: CWindow::updateWindowBounds(rect = (685, 117, 816, 639))</div>
+<div class="trace">26644: CWindow::updateWindowBounds(rect = (684, 117, 816, 639))</div>
+<div class="trace">26658: CWindow::updateWindowBounds(rect = (682, 116, 816, 639))</div>
+<div class="trace">26660: CWindow::updateWindowBounds(rect = (681, 116, 816, 639))</div>
+<div class="trace">26674: CWindow::updateWindowBounds(rect = (679, 116, 816, 639))</div>
+<div class="trace">26696: CWindow::updateWindowBounds(rect = (677, 116, 816, 639))</div>
+<div class="trace">26699: CWindow::updateWindowBounds(rect = (676, 116, 816, 639))</div>
+<div class="trace">26710: CWindow::updateWindowBounds(rect = (675, 116, 816, 639))</div>
+<div class="trace">26713: CWindow::updateWindowBounds(rect = (673, 115, 816, 639))</div>
+<div class="trace">26726: CWindow::updateWindowBounds(rect = (671, 115, 816, 639))</div>
+<div class="trace">26740: CWindow::updateWindowBounds(rect = (670, 115, 816, 639))</div>
+<div class="trace">26743: CWindow::updateWindowBounds(rect = (669, 114, 816, 639))</div>
+<div class="trace">26755: CWindow::updateWindowBounds(rect = (667, 114, 816, 639))</div>
+<div class="trace">26770: CWindow::updateWindowBounds(rect = (665, 114, 816, 639))</div>
+<div class="trace">26773: CWindow::updateWindowBounds(rect = (664, 114, 816, 639))</div>
+<div class="trace">26785: CWindow::updateWindowBounds(rect = (663, 113, 816, 639))</div>
+<div class="trace">26808: CWindow::updateWindowBounds(rect = (660, 113, 816, 639))</div>
+<div class="trace">26811: CWindow::updateWindowBounds(rect = (659, 112, 816, 639))</div>
+<div class="trace">26822: CWindow::updateWindowBounds(rect = (656, 112, 816, 639))</div>
+<div class="trace">26824: CWindow::updateWindowBounds(rect = (654, 111, 816, 639))</div>
+<div class="trace">26838: CWindow::updateWindowBounds(rect = (651, 110, 816, 639))</div>
+<div class="trace">26852: CWindow::updateWindowBounds(rect = (646, 109, 816, 639))</div>
+<div class="trace">26855: CWindow::updateWindowBounds(rect = (643, 108, 816, 639))</div>
+<div class="trace">26863: CWindow::updateWindowBounds(rect = (640, 108, 816, 639))</div>
+<div class="trace">26874: CWindow::updateWindowBounds(rect = (637, 106, 816, 639))</div>
+<div class="trace">26885: CWindow::updateWindowBounds(rect = (635, 105, 816, 639))</div>
+<div class="trace">26897: CWindow::updateWindowBounds(rect = (632, 104, 816, 639))</div>
+<div class="trace">26921: CWindow::updateWindowBounds(rect = (629, 104, 816, 639))</div>
+<div class="trace">26924: CWindow::updateWindowBounds(rect = (626, 102, 816, 639))</div>
+<div class="trace">26934: CWindow::updateWindowBounds(rect = (623, 101, 816, 639))</div>
+<div class="trace">26937: CWindow::updateWindowBounds(rect = (620, 101, 816, 639))</div>
+<div class="trace">26949: CWindow::updateWindowBounds(rect = (617, 99, 816, 639))</div>
+<div class="trace">26964: CWindow::updateWindowBounds(rect = (614, 98, 816, 639))</div>
+<div class="trace">26966: CWindow::updateWindowBounds(rect = (611, 97, 816, 639))</div>
+<div class="trace">26975: CWindow::updateWindowBounds(rect = (608, 96, 816, 639))</div>
+<div class="trace">26986: CWindow::updateWindowBounds(rect = (605, 95, 816, 639))</div>
+<div class="trace">26997: CWindow::updateWindowBounds(rect = (602, 94, 816, 639))</div>
+<div class="trace">27009: CWindow::updateWindowBounds(rect = (600, 93, 816, 639))</div>
+<div class="trace">27032: CWindow::updateWindowBounds(rect = (597, 91, 816, 639))</div>
+<div class="trace">27034: CWindow::updateWindowBounds(rect = (594, 90, 816, 639))</div>
+<div class="trace">27046: CWindow::updateWindowBounds(rect = (591, 88, 816, 639))</div>
+<div class="trace">27048: CWindow::updateWindowBounds(rect = (589, 87, 816, 639))</div>
+<div class="trace">27061: CWindow::updateWindowBounds(rect = (587, 86, 816, 639))</div>
+<div class="trace">27075: CWindow::updateWindowBounds(rect = (585, 84, 816, 639))</div>
+<div class="trace">27077: CWindow::updateWindowBounds(rect = (582, 82, 816, 639))</div>
+<div class="trace">27091: CWindow::updateWindowBounds(rect = (581, 81, 816, 639))</div>
+<div class="trace">27114: CWindow::updateWindowBounds(rect = (579, 80, 816, 639))</div>
+<div class="trace">27116: CWindow::updateWindowBounds(rect = (579, 79, 816, 639))</div>
+<div class="trace">27128: CWindow::updateWindowBounds(rect = (578, 78, 816, 639))</div>
+<div class="trace">27130: CWindow::updateWindowBounds(rect = (578, 77, 816, 639))</div>
+<div class="trace">27144: CWindow::updateWindowBounds(rect = (578, 76, 816, 639))</div>
+<div class="trace">27157: CWindow::updateWindowBounds(rect = (577, 76, 816, 639))</div>
+<div class="trace">27172: CWindow::updateWindowBounds(rect = (577, 75, 816, 639))</div>
+<div class="trace">27226: CWindow::updateWindowBounds(rect = (577, 74, 816, 639))</div>
+<div class="trace">27230: CWindow::updateWindowBounds(rect = (577, 73, 816, 639))</div>
+<div class="trace">27240: CWindow::updateWindowBounds(rect = (578, 73, 816, 639))</div>
+<div class="trace">27255: CWindow::updateWindowBounds(rect = (579, 72, 816, 639))</div>
+<div class="trace">27270: CWindow::updateWindowBounds(rect = (579, 71, 816, 639))</div>
+<div class="trace">27272: CWindow::updateWindowBounds(rect = (580, 70, 816, 639))</div>
+<div class="trace">27285: CWindow::updateWindowBounds(rect = (581, 70, 816, 639))</div>
+<div class="trace">27300: CWindow::updateWindowBounds(rect = (582, 69, 816, 639))</div>
+<div class="trace">27303: CWindow::updateWindowBounds(rect = (583, 69, 816, 639))</div>
+<div class="trace">27315: CWindow::updateWindowBounds(rect = (584, 68, 816, 639))</div>
+<div class="trace">27338: CWindow::updateWindowBounds(rect = (586, 67, 816, 639))</div>
+<div class="trace">27342: CWindow::updateWindowBounds(rect = (588, 66, 816, 639))</div>
+<div class="trace">27352: CWindow::updateWindowBounds(rect = (590, 65, 816, 639))</div>
+<div class="trace">27356: CWindow::updateWindowBounds(rect = (593, 64, 816, 639))</div>
+<div class="trace">27368: CWindow::updateWindowBounds(rect = (597, 63, 816, 639))</div>
+<div class="trace">27382: CWindow::updateWindowBounds(rect = (600, 62, 816, 639))</div>
+<div class="trace">27385: CWindow::updateWindowBounds(rect = (603, 61, 816, 639))</div>
+<div class="trace">27398: CWindow::updateWindowBounds(rect = (606, 59, 816, 639))</div>
+<div class="trace">27412: CWindow::updateWindowBounds(rect = (609, 59, 816, 639))</div>
+<div class="trace">27416: CWindow::updateWindowBounds(rect = (612, 58, 816, 639))</div>
+<div class="trace">27427: CWindow::updateWindowBounds(rect = (615, 57, 816, 639))</div>
+<div class="trace">27450: CWindow::updateWindowBounds(rect = (618, 56, 816, 639))</div>
+<div class="trace">27453: CWindow::updateWindowBounds(rect = (622, 56, 816, 639))</div>
+<div class="trace">27464: CWindow::updateWindowBounds(rect = (625, 54, 816, 639))</div>
+<div class="trace">27466: CWindow::updateWindowBounds(rect = (628, 53, 816, 639))</div>
+<div class="trace">27480: CWindow::updateWindowBounds(rect = (631, 51, 816, 639))</div>
+<div class="trace">27494: CWindow::updateWindowBounds(rect = (634, 51, 816, 639))</div>
+<div class="trace">27496: CWindow::updateWindowBounds(rect = (637, 50, 816, 639))</div>
+<div class="trace">27505: CWindow::updateWindowBounds(rect = (641, 48, 816, 639))</div>
+<div class="trace">27516: CWindow::updateWindowBounds(rect = (644, 47, 816, 639))</div>
+<div class="trace">27539: CWindow::updateWindowBounds(rect = (647, 47, 816, 639))</div>
+<div class="trace">27541: CWindow::updateWindowBounds(rect = (650, 46, 816, 639))</div>
+<div class="trace">27562: CWindow::updateWindowBounds(rect = (653, 45, 816, 639))</div>
+<div class="trace">27565: CWindow::updateWindowBounds(rect = (657, 44, 816, 639))</div>
+<div class="trace">27575: CWindow::updateWindowBounds(rect = (660, 44, 816, 639))</div>
+<div class="trace">27577: CWindow::updateWindowBounds(rect = (663, 44, 816, 639))</div>
+<div class="trace">27591: CWindow::updateWindowBounds(rect = (668, 43, 816, 639))</div>
+<div class="trace">27605: CWindow::updateWindowBounds(rect = (671, 43, 816, 639))</div>
+<div class="trace">27607: CWindow::updateWindowBounds(rect = (675, 43, 816, 639))</div>
+<div class="trace">27620: CWindow::updateWindowBounds(rect = (679, 43, 816, 639))</div>
+<div class="trace">27634: CWindow::updateWindowBounds(rect = (683, 43, 816, 639))</div>
+<div class="trace">27637: CWindow::updateWindowBounds(rect = (686, 43, 816, 639))</div>
+<div class="trace">27650: CWindow::updateWindowBounds(rect = (688, 43, 816, 639))</div>
+<div class="trace">27674: CWindow::updateWindowBounds(rect = (692, 43, 816, 639))</div>
+<div class="trace">27677: CWindow::updateWindowBounds(rect = (695, 43, 816, 639))</div>
+<div class="trace">27687: CWindow::updateWindowBounds(rect = (699, 44, 816, 639))</div>
+<div class="trace">27691: CWindow::updateWindowBounds(rect = (702, 44, 816, 639))</div>
+<div class="trace">27702: CWindow::updateWindowBounds(rect = (705, 44, 816, 639))</div>
+<div class="trace">27717: CWindow::updateWindowBounds(rect = (708, 45, 816, 639))</div>
+<div class="trace">27719: CWindow::updateWindowBounds(rect = (713, 47, 816, 639))</div>
+<div class="trace">27732: CWindow::updateWindowBounds(rect = (716, 48, 816, 639))</div>
+<div class="trace">27746: CWindow::updateWindowBounds(rect = (719, 48, 816, 639))</div>
+<div class="trace">27749: CWindow::updateWindowBounds(rect = (722, 49, 816, 639))</div>
+<div class="trace">27762: CWindow::updateWindowBounds(rect = (725, 50, 816, 639))</div>
+<div class="trace">27785: CWindow::updateWindowBounds(rect = (728, 52, 816, 639))</div>
+<div class="trace">27787: CWindow::updateWindowBounds(rect = (734, 54, 816, 639))</div>
+<div class="trace">27799: CWindow::updateWindowBounds(rect = (739, 55, 816, 639))</div>
+<div class="trace">27802: CWindow::updateWindowBounds(rect = (744, 57, 816, 639))</div>
+<div class="trace">27815: CWindow::updateWindowBounds(rect = (748, 59, 816, 639))</div>
+<div class="trace">27830: CWindow::updateWindowBounds(rect = (751, 61, 816, 639))</div>
+<div class="trace">27833: CWindow::updateWindowBounds(rect = (753, 61, 816, 639))</div>
+<div class="trace">27840: CWindow::updateWindowBounds(rect = (756, 63, 816, 639))</div>
+<div class="trace">27851: CWindow::updateWindowBounds(rect = (759, 64, 816, 639))</div>
+<div class="trace">27868: CWindow::updateWindowBounds(rect = (762, 65, 816, 639))</div>
+<div class="trace">27881: CWindow::updateWindowBounds(rect = (765, 67, 816, 639))</div>
+<div class="trace">27884: CWindow::updateWindowBounds(rect = (767, 68, 816, 639))</div>
+<div class="trace">27897: CWindow::updateWindowBounds(rect = (769, 69, 816, 639))</div>
+<div class="trace">27911: CWindow::updateWindowBounds(rect = (773, 71, 816, 639))</div>
+<div class="trace">27913: CWindow::updateWindowBounds(rect = (775, 72, 816, 639))</div>
+<div class="trace">27926: CWindow::updateWindowBounds(rect = (778, 74, 816, 639))</div>
+<div class="trace">27942: CWindow::updateWindowBounds(rect = (780, 75, 816, 639))</div>
+<div class="trace">27944: CWindow::updateWindowBounds(rect = (782, 77, 816, 639))</div>
+<div class="trace">27952: CWindow::updateWindowBounds(rect = (785, 78, 816, 639))</div>
+<div class="trace">27963: CWindow::updateWindowBounds(rect = (787, 80, 816, 639))</div>
+<div class="trace">27980: CWindow::updateWindowBounds(rect = (789, 82, 816, 639))</div>
+<div class="trace">27993: CWindow::updateWindowBounds(rect = (791, 83, 816, 639))</div>
+<div class="trace">27996: CWindow::updateWindowBounds(rect = (794, 86, 816, 639))</div>
+<div class="trace">28005: CWindow::updateWindowBounds(rect = (795, 87, 816, 639))</div>
+<div class="trace">28015: CWindow::updateWindowBounds(rect = (797, 89, 816, 639))</div>
+<div class="trace">28028: CWindow::updateWindowBounds(rect = (799, 91, 816, 639))</div>
+<div class="trace">28038: CWindow::updateWindowBounds(rect = (801, 92, 816, 639))</div>
+<div class="trace">28053: CWindow::updateWindowBounds(rect = (803, 95, 816, 639))</div>
+<div class="trace">28056: CWindow::updateWindowBounds(rect = (804, 97, 816, 639))</div>
+<div class="trace">28068: CWindow::updateWindowBounds(rect = (805, 97, 816, 639))</div>
+<div class="trace">28091: CWindow::updateWindowBounds(rect = (806, 99, 816, 639))</div>
+<div class="trace">28094: CWindow::updateWindowBounds(rect = (807, 100, 816, 639))</div>
+<div class="trace">28105: CWindow::updateWindowBounds(rect = (807, 101, 816, 639))</div>
+<div class="trace">28107: CWindow::updateWindowBounds(rect = (808, 102, 816, 639))</div>
+<div class="trace">28122: CWindow::updateWindowBounds(rect = (809, 104, 816, 639))</div>
+<div class="trace">28135: CWindow::updateWindowBounds(rect = (811, 106, 816, 639))</div>
+<div class="trace">28138: CWindow::updateWindowBounds(rect = (812, 109, 816, 639))</div>
+<div class="trace">28150: CWindow::updateWindowBounds(rect = (813, 111, 816, 639))</div>
+<div class="trace">28164: CWindow::updateWindowBounds(rect = (814, 114, 816, 639))</div>
+<div class="trace">28166: CWindow::updateWindowBounds(rect = (815, 116, 816, 639))</div>
+<div class="trace">28179: CWindow::updateWindowBounds(rect = (816, 118, 816, 639))</div>
+<div class="trace">28203: CWindow::updateWindowBounds(rect = (818, 122, 816, 639))</div>
+<div class="trace">28205: CWindow::updateWindowBounds(rect = (818, 124, 816, 639))</div>
+<div class="trace">28217: CWindow::updateWindowBounds(rect = (820, 127, 816, 639))</div>
+<div class="trace">28220: CWindow::updateWindowBounds(rect = (821, 129, 816, 639))</div>
+<div class="trace">28233: CWindow::updateWindowBounds(rect = (822, 132, 816, 639))</div>
+<div class="trace">28246: CWindow::updateWindowBounds(rect = (824, 135, 816, 639))</div>
+<div class="trace">28249: CWindow::updateWindowBounds(rect = (825, 138, 816, 639))</div>
+<div class="trace">28261: CWindow::updateWindowBounds(rect = (825, 141, 816, 639))</div>
+<div class="trace">28276: CWindow::updateWindowBounds(rect = (827, 143, 816, 639))</div>
+<div class="trace">28278: CWindow::updateWindowBounds(rect = (828, 146, 816, 639))</div>
+<div class="trace">28292: CWindow::updateWindowBounds(rect = (829, 149, 816, 639))</div>
+<div class="trace">28315: CWindow::updateWindowBounds(rect = (830, 152, 816, 639))</div>
+<div class="trace">28317: CWindow::updateWindowBounds(rect = (832, 154, 816, 639))</div>
+<div class="trace">28328: CWindow::updateWindowBounds(rect = (832, 157, 816, 639))</div>
+<div class="trace">28331: CWindow::updateWindowBounds(rect = (834, 159, 816, 639))</div>
+<div class="trace">28345: CWindow::updateWindowBounds(rect = (835, 162, 816, 639))</div>
+<div class="trace">28359: CWindow::updateWindowBounds(rect = (836, 164, 816, 639))</div>
+<div class="trace">28361: CWindow::updateWindowBounds(rect = (836, 166, 816, 639))</div>
+<div class="trace">28374: CWindow::updateWindowBounds(rect = (837, 168, 816, 639))</div>
+<div class="trace">28388: CWindow::updateWindowBounds(rect = (837, 169, 816, 639))</div>
+<div class="trace">28390: CWindow::updateWindowBounds(rect = (837, 170, 816, 639))</div>
+<div class="trace">28404: CWindow::updateWindowBounds(rect = (837, 172, 816, 639))</div>
+<div class="trace">28427: CWindow::updateWindowBounds(rect = (838, 173, 816, 639))</div>
+<div class="trace">28430: CWindow::updateWindowBounds(rect = (838, 174, 816, 639))</div>
+<div class="trace">28441: CWindow::updateWindowBounds(rect = (838, 175, 816, 639))</div>
+<div class="trace">28445: CWindow::updateWindowBounds(rect = (838, 176, 816, 639))</div>
+<div class="trace">28456: CWindow::updateWindowBounds(rect = (838, 177, 816, 639))</div>
+<div class="trace">28471: CWindow::updateWindowBounds(rect = (838, 178, 816, 639))</div>
+<div class="trace">28473: CWindow::updateWindowBounds(rect = (838, 179, 816, 639))</div>
+<div class="trace">28485: CWindow::updateWindowBounds(rect = (838, 181, 816, 639))</div>
+<div class="trace">28500: CWindow::updateWindowBounds(rect = (837, 182, 816, 639))</div>
+<div class="trace">28503: CWindow::updateWindowBounds(rect = (837, 183, 816, 639))</div>
+<div class="trace">28515: CWindow::updateWindowBounds(rect = (837, 185, 816, 639))</div>
+<div class="trace">28540: CWindow::updateWindowBounds(rect = (836, 186, 816, 639))</div>
+<div class="trace">28553: CWindow::updateWindowBounds(rect = (834, 189, 816, 639))</div>
+<div class="trace">28558: CWindow::updateWindowBounds(rect = (833, 192, 816, 639))</div>
+<div class="trace">28564: CWindow::updateWindowBounds(rect = (831, 194, 816, 639))</div>
+<div class="trace">28575: CWindow::updateWindowBounds(rect = (829, 198, 816, 639))</div>
+<div class="trace">28599: CWindow::updateWindowBounds(rect = (826, 203, 816, 639))</div>
+<div class="trace">33786: CWindow::updateWindowBounds(rect = (821, 199, 816, 639))</div>
+<div class="trace">33796: CWindow::updateWindowBounds(rect = (818, 197, 816, 639))</div>
+<div class="trace">33799: CWindow::updateWindowBounds(rect = (815, 195, 816, 639))</div>
+<div class="trace">33811: CWindow::updateWindowBounds(rect = (813, 194, 816, 639))</div>
+<div class="trace">33826: CWindow::updateWindowBounds(rect = (810, 192, 816, 639))</div>
+<div class="trace">33830: CWindow::updateWindowBounds(rect = (808, 191, 816, 639))</div>
+<div class="trace">33841: CWindow::updateWindowBounds(rect = (806, 189, 816, 639))</div>
+<div class="trace">33866: CWindow::updateWindowBounds(rect = (804, 187, 816, 639))</div>
+<div class="trace">33870: CWindow::updateWindowBounds(rect = (801, 186, 816, 639))</div>
+<div class="trace">33880: CWindow::updateWindowBounds(rect = (799, 184, 816, 639))</div>
+<div class="trace">33884: CWindow::updateWindowBounds(rect = (796, 183, 816, 639))</div>
+<div class="trace">33893: CWindow::updateWindowBounds(rect = (794, 181, 816, 639))</div>
+<div class="trace">33908: CWindow::updateWindowBounds(rect = (791, 179, 816, 639))</div>
+<div class="trace">33914: CWindow::updateWindowBounds(rect = (788, 177, 816, 639))</div>
+<div class="trace">33925: CWindow::updateWindowBounds(rect = (786, 176, 816, 639))</div>
+<div class="trace">33938: CWindow::updateWindowBounds(rect = (784, 174, 816, 639))</div>
+<div class="trace">33943: CWindow::updateWindowBounds(rect = (780, 172, 816, 639))</div>
+<div class="trace">33953: CWindow::updateWindowBounds(rect = (778, 171, 816, 639))</div>
+<div class="trace">33967: CWindow::updateWindowBounds(rect = (776, 170, 816, 639))</div>
+<div class="trace">33972: CWindow::updateWindowBounds(rect = (774, 168, 816, 639))</div>
+<div class="trace">33982: CWindow::updateWindowBounds(rect = (771, 167, 816, 639))</div>
+<div class="trace">34007: CWindow::updateWindowBounds(rect = (769, 165, 816, 639))</div>
+<div class="trace">34010: CWindow::updateWindowBounds(rect = (767, 164, 816, 639))</div>
+<div class="trace">34020: CWindow::updateWindowBounds(rect = (764, 162, 816, 639))</div>
+<div class="trace">34023: CWindow::updateWindowBounds(rect = (762, 160, 816, 639))</div>
+<div class="trace">34031: CWindow::updateWindowBounds(rect = (759, 159, 816, 639))</div>
+<div class="trace">34042: CWindow::updateWindowBounds(rect = (757, 158, 816, 639))</div>
+<div class="trace">34067: CWindow::updateWindowBounds(rect = (754, 157, 816, 639))</div>
+<div class="trace">34070: CWindow::updateWindowBounds(rect = (752, 155, 816, 639))</div>
+<div class="trace">34088: CWindow::updateWindowBounds(rect = (748, 154, 816, 639))</div>
+<div class="trace">34092: CWindow::updateWindowBounds(rect = (746, 153, 816, 639))</div>
+<div class="trace">34103: CWindow::updateWindowBounds(rect = (743, 151, 816, 639))</div>
+<div class="trace">34106: CWindow::updateWindowBounds(rect = (740, 150, 816, 639))</div>
+<div class="trace">34118: CWindow::updateWindowBounds(rect = (737, 149, 816, 639))</div>
+<div class="trace">34132: CWindow::updateWindowBounds(rect = (734, 148, 816, 639))</div>
+<div class="trace">34136: CWindow::updateWindowBounds(rect = (731, 147, 816, 639))</div>
+<div class="trace">34143: CWindow::updateWindowBounds(rect = (728, 146, 816, 639))</div>
+<div class="trace">34155: CWindow::updateWindowBounds(rect = (725, 145, 816, 639))</div>
+<div class="trace">34165: CWindow::updateWindowBounds(rect = (722, 144, 816, 639))</div>
+<div class="trace">34177: CWindow::updateWindowBounds(rect = (719, 142, 816, 639))</div>
+<div class="trace">34200: CWindow::updateWindowBounds(rect = (716, 142, 816, 639))</div>
+<div class="trace">34202: CWindow::updateWindowBounds(rect = (713, 141, 816, 639))</div>
+<div class="trace">34214: CWindow::updateWindowBounds(rect = (708, 139, 816, 639))</div>
+<div class="trace">34216: CWindow::updateWindowBounds(rect = (705, 138, 816, 639))</div>
+<div class="trace">34228: CWindow::updateWindowBounds(rect = (703, 138, 816, 639))</div>
+<div class="trace">34243: CWindow::updateWindowBounds(rect = (700, 136, 816, 639))</div>
+<div class="trace">34245: CWindow::updateWindowBounds(rect = (696, 135, 816, 639))</div>
+<div class="trace">34254: CWindow::updateWindowBounds(rect = (693, 134, 816, 639))</div>
+<div class="trace">34266: CWindow::updateWindowBounds(rect = (690, 134, 816, 639))</div>
+<div class="trace">34282: CWindow::updateWindowBounds(rect = (687, 132, 816, 639))</div>
+<div class="trace">34295: CWindow::updateWindowBounds(rect = (684, 131, 816, 639))</div>
+<div class="trace">34300: CWindow::updateWindowBounds(rect = (681, 130, 816, 639))</div>
+<div class="trace">34311: CWindow::updateWindowBounds(rect = (678, 129, 816, 639))</div>
+<div class="trace">34325: CWindow::updateWindowBounds(rect = (675, 127, 816, 639))</div>
+<div class="trace">34330: CWindow::updateWindowBounds(rect = (672, 127, 816, 639))</div>
+<div class="trace">34341: CWindow::updateWindowBounds(rect = (669, 126, 816, 639))</div>
+<div class="trace">34356: CWindow::updateWindowBounds(rect = (667, 124, 816, 639))</div>
+<div class="trace">34359: CWindow::updateWindowBounds(rect = (664, 124, 816, 639))</div>
+<div class="trace">34371: CWindow::updateWindowBounds(rect = (661, 123, 816, 639))</div>
+<div class="trace">34394: CWindow::updateWindowBounds(rect = (659, 122, 816, 639))</div>
+<div class="trace">34396: CWindow::updateWindowBounds(rect = (655, 120, 816, 639))</div>
+<div class="trace">34407: CWindow::updateWindowBounds(rect = (652, 120, 816, 639))</div>
+<div class="trace">34409: CWindow::updateWindowBounds(rect = (649, 119, 816, 639))</div>
+<div class="trace">34423: CWindow::updateWindowBounds(rect = (647, 118, 816, 639))</div>
+<div class="trace">34437: CWindow::updateWindowBounds(rect = (644, 117, 816, 639))</div>
+<div class="trace">34439: CWindow::updateWindowBounds(rect = (641, 117, 816, 639))</div>
+<div class="trace">34452: CWindow::updateWindowBounds(rect = (638, 116, 816, 639))</div>
+<div class="trace">34467: CWindow::updateWindowBounds(rect = (635, 115, 816, 639))</div>
+<div class="trace">34470: CWindow::updateWindowBounds(rect = (632, 114, 816, 639))</div>
+<div class="trace">34482: CWindow::updateWindowBounds(rect = (628, 114, 816, 639))</div>
+<div class="trace">34505: CWindow::updateWindowBounds(rect = (625, 113, 816, 639))</div>
+<div class="trace">34508: CWindow::updateWindowBounds(rect = (622, 112, 816, 639))</div>
+<div class="trace">34520: CWindow::updateWindowBounds(rect = (620, 112, 816, 639))</div>
+<div class="trace">34523: CWindow::updateWindowBounds(rect = (617, 111, 816, 639))</div>
+<div class="trace">34535: CWindow::updateWindowBounds(rect = (614, 110, 816, 639))</div>
+<div class="trace">34549: CWindow::updateWindowBounds(rect = (611, 110, 816, 639))</div>
+<div class="trace">34552: CWindow::updateWindowBounds(rect = (608, 110, 816, 639))</div>
+<div class="trace">34557: CWindow::updateWindowBounds(rect = (605, 109, 816, 639))</div>
+<div class="trace">34564: CWindow::updateWindowBounds(rect = (604, 109, 816, 639))</div>
+<div class="trace">34572: CWindow::updateWindowBounds(rect = (601, 109, 816, 639))</div>
+<div class="trace">34587: CWindow::updateWindowBounds(rect = (599, 108, 816, 639))</div>
+<div class="trace">34594: CWindow::updateWindowBounds(rect = (598, 108, 816, 639))</div>
+<div class="trace">34611: CWindow::updateWindowBounds(rect = (596, 108, 816, 639))</div>
+<div class="trace">34616: CWindow::updateWindowBounds(rect = (595, 108, 816, 639))</div>
+<div class="trace">34624: CWindow::updateWindowBounds(rect = (592, 108, 816, 639))</div>
+<div class="trace">34632: CWindow::updateWindowBounds(rect = (590, 108, 816, 639))</div>
+<div class="trace">34646: CWindow::updateWindowBounds(rect = (588, 108, 816, 639))</div>
+<div class="trace">34654: CWindow::updateWindowBounds(rect = (587, 108, 816, 639))</div>
+<div class="trace">34669: CWindow::updateWindowBounds(rect = (585, 108, 816, 639))</div>
+<div class="trace">34676: CWindow::updateWindowBounds(rect = (583, 108, 816, 639))</div>
+<div class="trace">34684: CWindow::updateWindowBounds(rect = (581, 108, 816, 639))</div>
+<div class="trace">34699: CWindow::updateWindowBounds(rect = (579, 108, 816, 639))</div>
+<div class="trace">34706: CWindow::updateWindowBounds(rect = (578, 108, 816, 639))</div>
+<div class="trace">34722: CWindow::updateWindowBounds(rect = (577, 108, 816, 639))</div>
+<div class="trace">34729: CWindow::updateWindowBounds(rect = (575, 108, 816, 639))</div>
+<div class="trace">34736: CWindow::updateWindowBounds(rect = (574, 108, 816, 639))</div>
+<div class="trace">34752: CWindow::updateWindowBounds(rect = (572, 108, 816, 639))</div>
+<div class="trace">34758: CWindow::updateWindowBounds(rect = (571, 108, 816, 639))</div>
+<div class="trace">34766: CWindow::updateWindowBounds(rect = (569, 108, 816, 639))</div>
+<div class="trace">34781: CWindow::updateWindowBounds(rect = (567, 108, 816, 639))</div>
+<div class="trace">34788: CWindow::updateWindowBounds(rect = (566, 108, 816, 639))</div>
+<div class="trace">34796: CWindow::updateWindowBounds(rect = (564, 108, 816, 639))</div>
+<div class="trace">34810: CWindow::updateWindowBounds(rect = (563, 108, 816, 639))</div>
+<div class="trace">34818: CWindow::updateWindowBounds(rect = (560, 108, 816, 639))</div>
+<div class="trace">34835: CWindow::updateWindowBounds(rect = (559, 108, 816, 639))</div>
+<div class="trace">34841: CWindow::updateWindowBounds(rect = (558, 108, 816, 639))</div>
+<div class="trace">34848: CWindow::updateWindowBounds(rect = (556, 108, 816, 639))</div>
+<div class="trace">34864: CWindow::updateWindowBounds(rect = (554, 108, 816, 639))</div>
+<div class="trace">34870: CWindow::updateWindowBounds(rect = (552, 108, 816, 639))</div>
+<div class="trace">34878: CWindow::updateWindowBounds(rect = (551, 108, 816, 639))</div>
+<div class="trace">35283: CWindow::updateWindowBounds(rect = (548, 112, 816, 639))</div>
+<div class="trace">35294: CWindow::updateWindowBounds(rect = (547, 112, 816, 639))</div>
+<div class="trace">35308: CWindow::updateWindowBounds(rect = (547, 113, 816, 639))</div>
+<div class="trace">35324: CWindow::updateWindowBounds(rect = (546, 113, 816, 639))</div>
+<div class="trace">35518: CWindow::updateWindowBounds(rect = (542, 115, 816, 639))</div>
+<div class="trace">35526: CWindow::updateWindowBounds(rect = (540, 116, 816, 639))</div>
+<div class="trace">39100: CWindow::updateWindowBounds(rect = (543, 117, 816, 639))</div>
+<div class="trace">39114: CWindow::updateWindowBounds(rect = (544, 117, 816, 639))</div>
+<div class="trace">39137: CWindow::updateWindowBounds(rect = (546, 117, 816, 639))</div>
+<div class="trace">39139: CWindow::updateWindowBounds(rect = (547, 117, 816, 639))</div>
+<div class="trace">39152: CWindow::updateWindowBounds(rect = (548, 118, 816, 639))</div>
+<div class="trace">39155: CWindow::updateWindowBounds(rect = (551, 119, 816, 639))</div>
+<div class="trace">39162: CWindow::updateWindowBounds(rect = (555, 119, 816, 639))</div>
+<div class="trace">39173: CWindow::updateWindowBounds(rect = (558, 120, 816, 639))</div>
+<div class="trace">39197: CWindow::updateWindowBounds(rect = (561, 121, 816, 639))</div>
+<div class="trace">39201: CWindow::updateWindowBounds(rect = (565, 121, 816, 639))</div>
+<div class="trace">39220: CWindow::updateWindowBounds(rect = (568, 122, 816, 639))</div>
+<div class="trace">39222: CWindow::updateWindowBounds(rect = (570, 122, 816, 639))</div>
+<div class="trace">39233: CWindow::updateWindowBounds(rect = (571, 122, 816, 639))</div>
+<div class="trace">39235: CWindow::updateWindowBounds(rect = (573, 122, 816, 639))</div>
+<div class="trace">39249: CWindow::updateWindowBounds(rect = (575, 122, 816, 639))</div>
+<div class="trace">39262: CWindow::updateWindowBounds(rect = (577, 122, 816, 639))</div>
+<div class="trace">39265: CWindow::updateWindowBounds(rect = (578, 122, 816, 639))</div>
+<div class="trace">39278: CWindow::updateWindowBounds(rect = (579, 122, 816, 639))</div>
+<div class="trace">39292: CWindow::updateWindowBounds(rect = (580, 122, 816, 639))</div>
+<div class="trace">39307: CWindow::updateWindowBounds(rect = (581, 122, 816, 639))</div>
+<div class="trace">39361: CWindow::updateWindowBounds(rect = (580, 121, 816, 639))</div>
+<div class="trace">44006: CWindow::updateWindowBounds(rect = (584, 125, 816, 639))</div>
+<div class="trace">44014: CWindow::updateWindowBounds(rect = (585, 126, 816, 639))</div>
+<div class="trace">44017: CWindow::updateWindowBounds(rect = (584, 126, 816, 639))</div>
+<div class="trace">44023: CWindow::updateWindowBounds(rect = (585, 127, 816, 639))</div>
+<div class="trace">44036: CWindow::updateWindowBounds(rect = (586, 127, 816, 639))</div>
+<div class="trace">44044: CWindow::updateWindowBounds(rect = (586, 129, 816, 639))</div>
+<div class="trace">44058: CWindow::updateWindowBounds(rect = (587, 129, 816, 639))</div>
+<div class="trace">44082: CWindow::updateWindowBounds(rect = (588, 130, 816, 639))</div>
+<div class="trace">44088: CWindow::updateWindowBounds(rect = (589, 131, 816, 639))</div>
+<div class="trace">44096: CWindow::updateWindowBounds(rect = (590, 132, 816, 639))</div>
+<div class="trace">44111: CWindow::updateWindowBounds(rect = (591, 132, 816, 639))</div>
+<div class="trace">44118: CWindow::updateWindowBounds(rect = (592, 133, 816, 639))</div>
+<div class="trace">44140: CWindow::updateWindowBounds(rect = (593, 134, 816, 639))</div>
+<div class="trace">44148: CWindow::updateWindowBounds(rect = (594, 135, 816, 639))</div>
+<div class="trace">44178: CWindow::updateWindowBounds(rect = (594, 136, 816, 639))</div>
+<div class="trace">44207: CWindow::updateWindowBounds(rect = (595, 136, 816, 639))</div>
+<div class="trace">44230: CWindow::updateWindowBounds(rect = (595, 137, 816, 639))</div>
+<div class="trace">44289: CWindow::updateWindowBounds(rect = (596, 138, 816, 639))</div>
+<div class="trace">44329: CWindow::updateWindowBounds(rect = (596, 139, 816, 639))</div>
+<div class="trace">45283: CWindow::updateWindowBounds(rect = (594, 134, 816, 639))</div>
+<div class="trace">45289: CWindow::updateWindowBounds(rect = (593, 133, 816, 639))</div>
+<div class="trace">45312: CWindow::updateWindowBounds(rect = (592, 132, 816, 639))</div>
+<div class="trace">45315: CWindow::updateWindowBounds(rect = (590, 131, 816, 639))</div>
+<div class="trace">45326: CWindow::updateWindowBounds(rect = (588, 128, 816, 639))</div>
+<div class="trace">45328: CWindow::updateWindowBounds(rect = (586, 127, 816, 639))</div>
+<div class="trace">45342: CWindow::updateWindowBounds(rect = (584, 125, 816, 639))</div>
+<div class="trace">45356: CWindow::updateWindowBounds(rect = (582, 123, 816, 639))</div>
+<div class="trace">45358: CWindow::updateWindowBounds(rect = (579, 122, 816, 639))</div>
+<div class="trace">45372: CWindow::updateWindowBounds(rect = (577, 120, 816, 639))</div>
+<div class="trace">45386: CWindow::updateWindowBounds(rect = (575, 119, 816, 639))</div>
+<div class="trace">45388: CWindow::updateWindowBounds(rect = (572, 117, 816, 639))</div>
+<div class="trace">45402: CWindow::updateWindowBounds(rect = (570, 116, 816, 639))</div>
+<div class="trace">45424: CWindow::updateWindowBounds(rect = (566, 115, 816, 639))</div>
+<div class="trace">45427: CWindow::updateWindowBounds(rect = (563, 114, 816, 639))</div>
+<div class="trace">45438: CWindow::updateWindowBounds(rect = (560, 113, 816, 639))</div>
+<div class="trace">45440: CWindow::updateWindowBounds(rect = (557, 111, 816, 639))</div>
+<div class="trace">45454: CWindow::updateWindowBounds(rect = (554, 111, 816, 639))</div>
+<div class="trace">45468: CWindow::updateWindowBounds(rect = (552, 109, 816, 639))</div>
+<div class="trace">45471: CWindow::updateWindowBounds(rect = (548, 108, 816, 639))</div>
+<div class="trace">45478: CWindow::updateWindowBounds(rect = (546, 108, 816, 639))</div>
+<div class="trace">45490: CWindow::updateWindowBounds(rect = (545, 107, 816, 639))</div>
+<div class="trace">45507: CWindow::updateWindowBounds(rect = (544, 106, 816, 639))</div>
+<div class="trace">45521: CWindow::updateWindowBounds(rect = (542, 106, 816, 639))</div>
+<div class="trace">45524: CWindow::updateWindowBounds(rect = (541, 106, 816, 639))</div>
+<div class="trace">45537: CWindow::updateWindowBounds(rect = (540, 105, 816, 639))</div>
+<div class="trace">45550: CWindow::updateWindowBounds(rect = (539, 105, 816, 639))</div>
+<div class="trace">45579: CWindow::updateWindowBounds(rect = (539, 104, 816, 639))</div>
+<div class="trace">45616: CWindow::updateWindowBounds(rect = (539, 103, 816, 639))</div>
+<div class="trace">45619: CWindow::updateWindowBounds(rect = (539, 104, 816, 639))</div>
+<div class="trace">61038: WM_CLOSE</div>
+<div class="info">61045: 🚪 System::Update(): `UserAction::CloseButtonClicked` has occurred</div>
+<div class="debug">61046: ♻️ Released Font[3]</div>
+<div class="debug">61046: ♻️ Released Texture[6]</div>
+<div class="debug">61048: ♻️ Released Texture[5]</div>
+<div class="debug">61048: ♻️ Released Texture[4]</div>
+<div class="debug">61048: ♻️ Released Texture[3]</div>
+<div class="debug">61049: ♻️ Released Texture[2]</div>
+<div class="debug">61049: ♻️ Released Script[0(null)]</div>
+<hr width="99%"><div class="trace">61069: CAsset::~CAsset()</div>
+<div class="trace">61070: CScript::~CScript()</div>
+<div class="trace">61070: CPrint::~CPrint()</div>
+<div class="debug">61070: ♻️ Released Font[2]</div>
+<div class="trace">61072: CEffect::~CEffect()</div>
+<div class="debug">61072: ♻️ Released Effect[0(null)]</div>
+<div class="trace">61073: CGUI::~CGUI()</div>
+<div class="debug">61073: ♻️ Released Font[1]</div>
+<div class="trace">61074: CSDFFont::~CSDFFont()</div>
+<div class="debug">61074: ♻️ Released SDFFont[0(null)]</div>
+<div class="trace">61075: CFont::~CFont()</div>
+<div class="debug">61075: ♻️ Released Font[0(null)]</div>
+<div class="trace">61076: CScreenCapture::~CScreenCapture()</div>
+<div class="trace">61077: CRenderer2D_D3D11::~CRenderer2D_D3D11()</div>
+<div class="debug">61077: ♻️ Released Texture[1]</div>
+<div class="debug">61078: ♻️ Released PixelShader[9]</div>
+<div class="debug">61079: ♻️ Released PixelShader[8]</div>
+<div class="debug">61079: ♻️ Released PixelShader[7]</div>
+<div class="debug">61080: ♻️ Released PixelShader[6]</div>
+<div class="debug">61081: ♻️ Released PixelShader[5]</div>
+<div class="debug">61081: ♻️ Released PixelShader[4]</div>
+<div class="debug">61081: ♻️ Released PixelShader[3]</div>
+<div class="debug">61082: ♻️ Released VertexShader[3]</div>
+<div class="debug">61082: ♻️ Released VertexShader[2]</div>
+<div class="debug">61083: ♻️ Released VertexShader[1]</div>
+<div class="trace">61083: CTexture_D3D11::~CTexture_D3D11()</div>
+<div class="debug">61084: ♻️ Released Texture[0(null)]</div>
+<div class="trace">61084: CShader_D3D11::~CShader_D3D11()</div>
+<div class="debug">61084: ♻️ Released PixelShader[1]</div>
+<div class="debug">61085: ♻️ Released PixelShader[2]</div>
+<div class="debug">61086: ♻️ Released PixelShader[0(null)]</div>
+<div class="debug">61086: ♻️ Released VertexShader[0(null)]</div>
+<div class="trace">61086: CGraphics_D3D11::~CGraphics_D3D11()</div>
+<div class="trace">61110: CToastNotification::~CToastNotification()</div>
+<div class="trace">61110: CNetwork::~CNetwork()</div>
+<div class="trace">61110: CFFT::~CFFT()</div>
+<div class="debug">61130: ♻️ Released Audio[0(null)]</div>
+<div class="trace">61150: CSoundFont::~CSoundFont()</div>
+<div class="trace">61150: CAudioFormat::~CAudioFormat()</div>
+<div class="trace">61150: CCodec::~CCodec()</div>
+<div class="trace">61157: CDragDrop::~CDragDrop()</div>
+<div class="trace">61158: CClipboard::~CClipboard()</div>
+<div class="trace">61158: CTextToSpeech::~CTextToSpeech()</div>
+<div class="trace">61158: CTextInput::~CTextInput()</div>
+<div class="trace">61159: CXInput::~CXInput()</div>
+<div class="trace">61159: CGamepad::~CGamepad()</div>
+<div class="trace">61159: CMouse::~CMouse()</div>
+<div class="trace">61159: CKeyboard::CKeyboard()</div>
+<div class="trace">61159: CCursor::~CCursor()</div>
+<div class="trace">61160: CWindow::~CWindow()</div>
+<div class="trace">61169: WM_DESTROY</div>
+<div class="trace">61179: message.message == WM_QUIT</div>
+<div class="trace">61180: CObjectDetection::~CObjectDetection()</div>
+<div class="trace">61180: CImageFormat::~CImageFormat()</div>
+<div class="trace">61181: CProfiler::~CProfiler()</div>
+<div class="trace">61181: CCPU::~CCPU()</div>
+<div class="info">61199: ✅ Siv3D engine has terminated</div>
+<div class="info">61199: ℹ️ 2021/6/22 13:26:55</div>
 </div>
 </body>
 </html>
