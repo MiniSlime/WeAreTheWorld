@@ -15,6 +15,10 @@ void Main()
     Array<Vec2> points;
     const Font font(50,Typeface::Default,FontStyle::BoldItalic);
 
+    double sliderValue = 0.0;
+
+    TextEditState text1;
+
     while (System::Update())
     {
         const double t = Scene::Time();
@@ -26,7 +30,7 @@ void Main()
         }
 
         for (auto i : step(12)) {
-            const double theta = i * 30_deg + t * 30_deg;
+            const double theta = i * 30_deg + t * 30_deg * sliderValue;
             const Vec2 pos = OffsetCircular(center,r,theta);
             const Vec2 pos2 = OffsetCircular(center, 110, theta*-1);
             const Vec2 pos3 = OffsetCircular(center, 300, theta*-1);
@@ -40,10 +44,17 @@ void Main()
             Circle(point,10).draw(Palette::Aqua);
         }
 
-        const String text = U"いそちゃんを救う会";
+        SimpleGUI::TextBox(text1,Vec2(center.x-200,center.y+170),400);
+
+        const String text = text1.text;
         const size_t length = static_cast<size_t>((int)(t/0.1)%(text.length()+1));
 
         font(text.substr(0,length)).drawAt(center.movedBy(4,4), Palette::Black);
         font(text.substr(0,length)).drawAt(center,Palette::Red);
+
+        if (SimpleGUI::Button(U"push here", Vec2(center.x-50,center.y+70),100)) {
+            Scene::SetBackground(RandomColor());
+        }
+        SimpleGUI::Slider(U"{:.2f}"_fmt(sliderValue),sliderValue,-10.0,10.0, Vec2(center.x - 100, center.y + 120));
     }
 }
