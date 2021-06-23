@@ -2,8 +2,10 @@
 
 void Main()
 {
+    Window::SetTitle(U"We Are The World");
     Window::SetStyle(WindowStyle::Sizable);
     Scene::SetBackground(Palette::White);
+    Scene::SetLetterbox(Palette::Black);
 
     const Texture earth(Emoji(U"🌏"));
     const Texture texture(Emoji(U"🐈"));
@@ -24,6 +26,7 @@ void Main()
     while (System::Update())
     {
         const double t = Scene::Time();
+        const double dt = Scene::DeltaTime();
 
         earth.rotated(t).drawAt(center);
 
@@ -31,8 +34,10 @@ void Main()
             points << Cursor::Pos();
         }
 
+        static double baseTheta = 0;
+        baseTheta += dt * 30_deg * sliderValue;
         for (auto i : step(12)) {
-            const double theta = i * 30_deg + t * 30_deg * sliderValue;
+            const double theta = i * 30_deg + baseTheta;
             const Vec2 pos = OffsetCircular(center,r,theta);
             const Vec2 pos2 = OffsetCircular(center, 110, theta*-1);
             const Vec2 pos3 = OffsetCircular(center, 300, theta*-1);
@@ -56,6 +61,7 @@ void Main()
 
         if (SimpleGUI::Button(U"push here", Vec2(center.x-50,center.y+70),100)) {
             Scene::SetBackground(RandomColor());
+            Scene::SetLetterbox(RandomColor());
         }
         SimpleGUI::Slider(U"{:.2f}"_fmt(sliderValue),sliderValue,-10.0,10.0, Vec2(center.x - 100, center.y + 120));
     }
