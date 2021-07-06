@@ -8,7 +8,7 @@ struct RingEffect : IEffect {
 
     bool update(double t) override {
         const double e = EaseOutExpo(t);
-        Print << e;
+        //Print << e;
 
         Circle(m_pos, e * 100).drawFrame(20.0 * (1.0 - e), RandomColor());
 
