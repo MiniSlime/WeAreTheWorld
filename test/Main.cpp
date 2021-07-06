@@ -1,5 +1,21 @@
 ﻿# include <Siv3D.hpp>
 
+struct RingEffect : IEffect {
+    Vec2 m_pos;
+
+    RingEffect(const Vec2& pos)
+        : m_pos(pos) {}
+
+    bool update(double t) override {
+        const double e = EaseOutExpo(t);
+        Print << e;
+
+        Circle(m_pos, e * 100).drawFrame(20.0 * (1.0 - e), RandomColor());
+
+        return t < 1.0;
+    }
+};
+
 void Main()
 {
     Window::SetTitle(U"We Are The World");
@@ -26,6 +42,8 @@ void Main()
     Camera2D camera(Vec2(0,0), 1.0, Camera2DParameters::MouseOnly());
     camera.setCenter(center);
     camera.setTargetCenter(center);
+
+    Effect effect;
 
     while (System::Update())
     {
@@ -72,6 +90,11 @@ void Main()
                 Scene::SetLetterbox(RandomColor());
             }
             SimpleGUI::Slider(U"{:.2f}"_fmt(sliderValue), sliderValue, -10.0, 10.0, Vec2(center.x - 100, center.y + 120));
+            
+            if (MouseR.down()) {
+                effect.add<RingEffect>(Cursor::Pos());
+            }
+            effect.update();
         }
 
         if (SimpleGUI::Button(U"Reset", Vec2(20, 20)))
@@ -82,6 +105,6 @@ void Main()
             camera.setScale(1.0);
             camera.setTargetScale(1.0);
         }
-        camera.draw(Palette::Orange);
+        camera.draw(Palette::Red);
     }
 }
