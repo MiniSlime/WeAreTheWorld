@@ -1,4 +1,5 @@
 ﻿# include <Siv3D.hpp>
+# include "../sayHi/sayHi.hpp"
 
 struct RingEffect : IEffect {
     Vec2 m_pos;
@@ -58,6 +59,7 @@ void Main()
 
             if (MouseL.down()) {
                 points << Cursor::Pos();
+                sayHi();
             }
 
             static double baseTheta = 0;
