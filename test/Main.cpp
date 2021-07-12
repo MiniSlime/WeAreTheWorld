@@ -4,6 +4,7 @@ void Main()
 {
     Window::SetTitle(U"We Are The World");
     Window::SetStyle(WindowStyle::Sizable);
+    Window::Resize(Size(1280, 640)),
     Scene::SetBackground(Palette::White);
     Scene::SetLetterbox(Palette::Black);
 
